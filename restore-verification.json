@@ -1,0 +1,346 @@
+{
+  "verified_at": "2026-10-03T16:06:17.335651+00:00",
+  "checks": [
+    {
+      "repository": "Zwart04/daily-apps",
+      "latest_head_restored": "20ddaca874d3dab57d87a80aae6a8f0a4fa24cdb",
+      "original_bundle_heads_restored": [
+        "fc51fc71d448a88d5f2c47f96520aeffb3f66a31"
+      ]
+    },
+    {
+      "repository": "Zwart04/habitflow",
+      "latest_head_restored": "57785e82d69eb70cc798589615dbfd2410747786",
+      "original_bundle_heads_restored": [
+        "243753773eca58073997b4c43b6d8105c2cb2830",
+        "61d4cbfc9786c199d8196529a6e3fddf4f8d22fc"
+      ]
+    },
+    {
+      "repository": "Zwart04/habitgrid",
+      "latest_head_restored": "f8f31d132f68079256335d1fb7417b0656d23cbd",
+      "original_bundle_heads_restored": [
+        "b1e9826d5e8cb08fba7b1e0ff5a6515f8483a8f9"
+      ]
+    },
+    {
+      "repository": "Zwart04/routineflow",
+      "latest_head_restored": "d1b29c92c3a1396a62fd28fd20055bb8c6b4248c",
+      "original_bundle_heads_restored": [
+        "05f140c3e9a846f71479519e83f46314a9998a2a"
+      ]
+    },
+    {
+      "repository": "Zwart04/hearth-os",
+      "latest_head_restored": "3a03723367a24f729c2f5248fe134f04600b9cb1",
+      "original_bundle_heads_restored": [
+        "295d4088b7f6e9a419080c384da71df8c6194614"
+      ]
+    },
+    {
+      "repository": "Zwart04/tripforge",
+      "latest_head_restored": "a8f616938f133028296fe349a7763718248618e5",
+      "original_bundle_heads_restored": [
+        "36f0bdbd708149bfa579042227a93ba74892f0f2"
+      ]
+    },
+    {
+      "repository": "Zwart04/daganghub",
+      "latest_head_restored": "fde2fa0182d10f1dc3e8f5ad913bda6f37e44a94",
+      "original_bundle_heads_restored": [
+        "4fe65957cbcb295fde0bf3eb72103f45de855cb1"
+      ]
+    },
+    {
+      "repository": "Zwart04/rosari-commerce",
+      "latest_head_restored": "2ca2b8fb234682c395ecd5e6f745f2dbaeeb91e4",
+      "original_bundle_heads_restored": [
+        "fccd9dd12db72da21c21db89fc77b028907a699b"
+      ]
+    },
+    {
+      "repository": "Zwart04/warungrosari",
+      "latest_head_restored": "c8bff4209c502f2a07497c6c1fff66f36f88fd7b",
+      "original_bundle_heads_restored": [
+        "b9833e737d5a5d5d75b003beea17c700455cd568"
+      ]
+    },
+    {
+      "repository": "Zwart04/waconvert",
+      "latest_head_restored": "473be55286b426e96f11c4c39e255758b36af871",
+      "original_bundle_heads_restored": [
+        "f17ded3a02686b7868860b4e60544359f2afbfd7"
+      ]
+    },
+    {
+      "repository": "Zwart04/wahagenius-crm",
+      "latest_head_restored": "f9755df76a907b9bb10a1fee72a0f4001de7de37",
+      "original_bundle_heads_restored": [
+        "4446bdb79ab761d79cc25b156922abafec6d7f32"
+      ]
+    },
+    {
+      "repository": "Zwart04/ledger",
+      "latest_head_restored": "56c9d394a8be3fd0117453af268ac6a5f8638ce4",
+      "original_bundle_heads_restored": [
+        "c62e39cd333b4dbe9f83d9a152cdbdc7560e47c7"
+      ]
+    },
+    {
+      "repository": "Zwart04/ledgerflow",
+      "latest_head_restored": "5e3e6b6ca332e9be3d7f7d06435c7986dd8d7eb0",
+      "original_bundle_heads_restored": [
+        "94995a64325fb0e4620ab01c6be2d71cf0d9c0ec"
+      ]
+    },
+    {
+      "repository": "Zwart04/invensight",
+      "latest_head_restored": "07afadb6a086485ef3dbc7b3be87617aa57593e3",
+      "original_bundle_heads_restored": [
+        "4a5209e4dfa45a6db6d534b43454f0e5aeb23b8f"
+      ]
+    },
+    {
+      "repository": "Zwart04/priceforge",
+      "latest_head_restored": "bbab8a33c5d953253b17186e95aa6d2011825d7e",
+      "original_bundle_heads_restored": [
+        "6b4c47c5387efea5d312792936f7c50d9398650d"
+      ]
+    },
+    {
+      "repository": "Zwart04/menumaster",
+      "latest_head_restored": "2d9962dd90ea5f2d6ed6d0522009a119c04cae5a",
+      "original_bundle_heads_restored": [
+        "5c87df37620bad16a483119d713f8c2b70df5ab9"
+      ]
+    },
+    {
+      "repository": "Zwart04/motopart",
+      "latest_head_restored": "d06b1e8b3c456d01484c194abd254a88046a3ef9",
+      "original_bundle_heads_restored": [
+        "953b78bee674cd8ac0c4639b17c1c7c12bc76273"
+      ]
+    },
+    {
+      "repository": "Zwart04/attribution-hub",
+      "latest_head_restored": "826f3b7880d0ec031173a38aabe8f597d77202dc",
+      "original_bundle_heads_restored": [
+        "60d596d935f4eb98a1c99d9d2753067afc794f30"
+      ]
+    },
+    {
+      "repository": "Zwart04/resi-flow",
+      "latest_head_restored": "4d3480df01893149f0ffdb9c6ef41f35e1315edf",
+      "original_bundle_heads_restored": [
+        "8fe23924ce86c20112bba24baeaf83268406c63d"
+      ]
+    },
+    {
+      "repository": "Zwart04/renderforge",
+      "latest_head_restored": "590ecf3e836ddd170352589132bc036b8fe39fc8",
+      "original_bundle_heads_restored": [
+        "65681273145e1dd03905abb1acbd9bdd20231e9c"
+      ]
+    },
+    {
+      "repository": "Zwart04/mediaforge",
+      "latest_head_restored": "86507f8f621795f851bda82643d934c6a76a5f11",
+      "original_bundle_heads_restored": []
+    },
+    {
+      "repository": "Zwart04/clipforge",
+      "latest_head_restored": "4876e2d939ea7d74c3df59d4c81270ff888c64d2",
+      "original_bundle_heads_restored": [
+        "f5817779cbb59ced4140b4eddc5471b9314cde7f"
+      ]
+    },
+    {
+      "repository": "Zwart04/clipforge-ai",
+      "latest_head_restored": "a0fc6530cf869f8eb1b9d9a55ee1f6801a264ca1",
+      "original_bundle_heads_restored": [
+        "486d94423c2e73ccf45f158f574ea2e79c0a804b"
+      ]
+    },
+    {
+      "repository": "Zwart04/neurotone",
+      "latest_head_restored": "66f65a3945747d78ab1ea5f8234fe99dad388890",
+      "original_bundle_heads_restored": [
+        "5fe297ef46021ab8592c5efd4217ebeaa41241d4"
+      ]
+    },
+    {
+      "repository": "Zwart04/audiomind-studio",
+      "latest_head_restored": "ba707f29f6bfeda102e29743cfc9ebfcbb781ced",
+      "original_bundle_heads_restored": []
+    },
+    {
+      "repository": "Zwart04/socsynth-studio",
+      "latest_head_restored": "c81db31cf5a3d3c8213c8d9c37bb28851e54d033",
+      "original_bundle_heads_restored": [
+        "0ded61c09bb59cc573a3ea319144ae71653fcfb9"
+      ]
+    },
+    {
+      "repository": "Zwart04/socsynth-studio-new",
+      "latest_head_restored": "e5d09a1e11612940a85b3628a81e2d6f8df4d8e8",
+      "original_bundle_heads_restored": [
+        "7e885ea630021db454b80d59387cb6264d7a91d4"
+      ]
+    },
+    {
+      "repository": "Zwart04/zwart-2026-08-31-socsynth-studio",
+      "latest_head_restored": "3583984fa453ce766824e610b4d8b705e94d925c",
+      "original_bundle_heads_restored": [
+        "d5ba98daebf6dacfe3d6f9fe1c91b73d035a1ee6"
+      ]
+    },
+    {
+      "repository": "Zwart04/podforge",
+      "latest_head_restored": "ec243533daf01f16d7ff56765cf78798dc95fad0",
+      "original_bundle_heads_restored": [
+        "ff09ee29ee8638b55e6bf5f31193ac951b10368d"
+      ]
+    },
+    {
+      "repository": "Zwart04/voiceforge-studio",
+      "latest_head_restored": "75521cc8ec47f4c885ee040b86a390b64428431e",
+      "original_bundle_heads_restored": [
+        "d658ed1129b8511d2d24ce6c24afa0c5a6370085"
+      ]
+    },
+    {
+      "repository": "Zwart04/moodcanvas",
+      "latest_head_restored": "2436e2b504e1eab5542391ed610946498f8feb92",
+      "original_bundle_heads_restored": [
+        "12d6e7ad7c8a2e71788a31fb2cf42995aedee29f"
+      ]
+    },
+    {
+      "repository": "Zwart04/tutormind",
+      "latest_head_restored": "ca1f18cfddf8c2411821d47b7fc9f3e7fbba0d0d",
+      "original_bundle_heads_restored": [
+        "976ca39d008546b3cf494c4854f931790a4dd438"
+      ]
+    },
+    {
+      "repository": "Zwart04/courseforge",
+      "latest_head_restored": "af28e3a0d24429b0934bcdf3cb9980c4adc7751e",
+      "original_bundle_heads_restored": [
+        "ae79e1f825c1dca6c426b33d0e829680aa951fc1"
+      ]
+    },
+    {
+      "repository": "Zwart04/inventa",
+      "latest_head_restored": "d1c8e0ebbe3ddee4782e811cd0e3fecf655699d3",
+      "original_bundle_heads_restored": [
+        "7915702148d8ba7f3373fc221b8ef831f02e760a"
+      ]
+    },
+    {
+      "repository": "Zwart04/servora",
+      "latest_head_restored": "b986b78d5a6e194ccb0934d557481c4c80a2e74e",
+      "original_bundle_heads_restored": [
+        "253b4f69cd87b929bf27aa4c8e14ab763a8a0357"
+      ]
+    },
+    {
+      "repository": "Zwart04/bookflow",
+      "latest_head_restored": "805aac9b05f7a4d5cc87a06398bf7f1823abd600",
+      "original_bundle_heads_restored": [
+        "19ea57d52bf89df99154dba14154797937ca6824"
+      ]
+    },
+    {
+      "repository": "Zwart04/fieldroute-os",
+      "latest_head_restored": "71b11df53192de16d0f812b4e61b134025d82262",
+      "original_bundle_heads_restored": [
+        "b151eafe8cab05f26f18fa54f64daec4cdbd0eec"
+      ]
+    },
+    {
+      "repository": "Zwart04/fleetmile",
+      "latest_head_restored": "d3188812b336a125a462a17bd143b3aa94de452b",
+      "original_bundle_heads_restored": [
+        "1bb09f1f35a86c88c516aeef624ea1f90a92dfa7"
+      ]
+    },
+    {
+      "repository": "Zwart04/aquapure",
+      "latest_head_restored": "754a07f759d5ae23bc838b006bb76fa5d7d4bb4a",
+      "original_bundle_heads_restored": [
+        "f7fd6a33e5bca830ff8745db38ea8bea3f8271e9"
+      ]
+    },
+    {
+      "repository": "Zwart04/farmlog",
+      "latest_head_restored": "1c03711f2efea3e51b0abb00f3c5f82a23a19b3b",
+      "original_bundle_heads_restored": [
+        "b687c4219cf837bf069fe827fea46442f0271a5b"
+      ]
+    },
+    {
+      "repository": "Zwart04/carbontrack",
+      "latest_head_restored": "5593c4fee1b17646e6aba5dbf347819526d00258",
+      "original_bundle_heads_restored": [
+        "50e085b31584bc48d915969762b0cf1de6ed772f"
+      ]
+    },
+    {
+      "repository": "Zwart04/clinic-os",
+      "latest_head_restored": "bd84e8b5874ec3907c1eef90aba62859add4deed",
+      "original_bundle_heads_restored": [
+        "d190ec08bdbc24c813a4b1a02cae9828c902d1d2"
+      ]
+    },
+    {
+      "repository": "Zwart04/legalbot-garuda",
+      "latest_head_restored": "0024a5c532b56c0cf69af0513aa2aa286475b908",
+      "original_bundle_heads_restored": [
+        "2076be21276edd58e290b09d1f1986d76120e763"
+      ]
+    },
+    {
+      "repository": "Zwart04/lawbot",
+      "latest_head_restored": "8c7177736b4e686244d046d6e41156d95e49a515",
+      "original_bundle_heads_restored": [
+        "4489d60479ba1f1f8729ac197fee50b443b91167"
+      ]
+    },
+    {
+      "repository": "Zwart04/legalbotgaruda",
+      "latest_head_restored": "75b0d1ca9767d9e11809000e4c9f77ac2638ad13",
+      "original_bundle_heads_restored": [
+        "a0aec4034098682f590a8f2d3d5ab001aad46d18"
+      ]
+    },
+    {
+      "repository": "Zwart04/codeforgeme",
+      "latest_head_restored": "d1694c6e7097ad6deed1faed166501d9e63eb0a5",
+      "original_bundle_heads_restored": [
+        "1b4beb9bd23d62189bcb37bb5660f22a88b84a8e"
+      ]
+    },
+    {
+      "repository": "Zwart04/gridcraft",
+      "latest_head_restored": "8224e0735f60d3a96df698904d5cde73833c1ed9",
+      "original_bundle_heads_restored": [
+        "9c7d9d8dbd30c0d0ad12b7b8e5b26713d9b1e6a4"
+      ]
+    },
+    {
+      "repository": "Zwart04/shaderforge",
+      "latest_head_restored": "2f8aee98a9f21d3a27b534cec2dc0abf3f53ecb6",
+      "original_bundle_heads_restored": []
+    },
+    {
+      "repository": "Zwart04/stockgenie",
+      "latest_head_restored": "a6f10726ad82f983111c02511d0da9a1b41a086c",
+      "original_bundle_heads_restored": []
+    },
+    {
+      "repository": "Zwart04/zwart04-projects",
+      "latest_head_restored": "0b43792891008e4209e7e5fac331489735fd5eb7",
+      "original_bundle_heads_restored": []
+    }
+  ]
+}

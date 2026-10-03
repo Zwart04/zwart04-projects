@@ -1,0 +1,306 @@
+[
+  {
+    "repository": "Zwart04/attribution-hub",
+    "id": 1349552608,
+    "head_backed_up": "826f3b7880d0ec031173a38aabe8f597d77202dc",
+    "deleted_at": "2026-10-03T16:08:46.742963+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/audiomind-studio",
+    "id": 1377687557,
+    "head_backed_up": "ba707f29f6bfeda102e29743cfc9ebfcbb781ced",
+    "deleted_at": "2026-10-03T16:08:49.144003+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/bookflow",
+    "id": 1347042872,
+    "head_backed_up": "805aac9b05f7a4d5cc87a06398bf7f1823abd600",
+    "deleted_at": "2026-10-03T16:08:52.141926+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/carbontrack",
+    "id": 1358694190,
+    "head_backed_up": "5593c4fee1b17646e6aba5dbf347819526d00258",
+    "deleted_at": "2026-10-03T16:08:54.453446+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/clipforge",
+    "id": 1363565076,
+    "head_backed_up": "4876e2d939ea7d74c3df59d4c81270ff888c64d2",
+    "deleted_at": "2026-10-03T16:08:56.886372+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/clipforge-ai",
+    "id": 1351291166,
+    "head_backed_up": "a0fc6530cf869f8eb1b9d9a55ee1f6801a264ca1",
+    "deleted_at": "2026-10-03T16:08:59.282351+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/courseforge",
+    "id": 1347877121,
+    "head_backed_up": "af28e3a0d24429b0934bcdf3cb9980c4adc7751e",
+    "deleted_at": "2026-10-03T16:09:01.791919+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/farmlog",
+    "id": 1350264066,
+    "head_backed_up": "1c03711f2efea3e51b0abb00f3c5f82a23a19b3b",
+    "deleted_at": "2026-10-03T16:09:04.224237+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/fieldroute-os",
+    "id": 1349552856,
+    "head_backed_up": "71b11df53192de16d0f812b4e61b134025d82262",
+    "deleted_at": "2026-10-03T16:09:06.615646+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/fleetmile",
+    "id": 1354106201,
+    "head_backed_up": "d3188812b336a125a462a17bd143b3aa94de452b",
+    "deleted_at": "2026-10-03T16:09:09.471156+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/habitflow",
+    "id": 1341941040,
+    "head_backed_up": "57785e82d69eb70cc798589615dbfd2410747786",
+    "deleted_at": "2026-10-03T16:09:12.249482+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/habitgrid",
+    "id": 1363438049,
+    "head_backed_up": "f8f31d132f68079256335d1fb7417b0656d23cbd",
+    "deleted_at": "2026-10-03T16:09:14.624007+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/hearth-os",
+    "id": 1349022369,
+    "head_backed_up": "3a03723367a24f729c2f5248fe134f04600b9cb1",
+    "deleted_at": "2026-10-03T16:09:17.529560+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/invensight",
+    "id": 1353003856,
+    "head_backed_up": "07afadb6a086485ef3dbc7b3be87617aa57593e3",
+    "deleted_at": "2026-10-03T16:09:19.954368+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/inventa",
+    "id": 1359243641,
+    "head_backed_up": "d1c8e0ebbe3ddee4782e811cd0e3fecf655699d3",
+    "deleted_at": "2026-10-03T16:09:22.497864+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/lawbot",
+    "id": 1361505267,
+    "head_backed_up": "8c7177736b4e686244d046d6e41156d95e49a515",
+    "deleted_at": "2026-10-03T16:09:24.927588+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/ledger",
+    "id": 1341859326,
+    "head_backed_up": "56c9d394a8be3fd0117453af268ac6a5f8638ce4",
+    "deleted_at": "2026-10-03T16:09:28.147368+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/ledgerflow",
+    "id": 1346864839,
+    "head_backed_up": "5e3e6b6ca332e9be3d7f7d06435c7986dd8d7eb0",
+    "deleted_at": "2026-10-03T16:09:30.889616+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/legalbotgaruda",
+    "id": 1357721370,
+    "head_backed_up": "75b0d1ca9767d9e11809000e4c9f77ac2638ad13",
+    "deleted_at": "2026-10-03T16:09:33.250915+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/mediaforge",
+    "id": 1359060805,
+    "head_backed_up": "86507f8f621795f851bda82643d934c6a76a5f11",
+    "deleted_at": "2026-10-03T16:09:35.458979+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/menumaster",
+    "id": 1355317102,
+    "head_backed_up": "2d9962dd90ea5f2d6ed6d0522009a119c04cae5a",
+    "deleted_at": "2026-10-03T16:09:38.014170+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/moodcanvas",
+    "id": 1354184293,
+    "head_backed_up": "2436e2b504e1eab5542391ed610946498f8feb92",
+    "deleted_at": "2026-10-03T16:09:40.488727+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/motopart",
+    "id": 1316209743,
+    "head_backed_up": "d06b1e8b3c456d01484c194abd254a88046a3ef9",
+    "deleted_at": "2026-10-03T16:09:43.320039+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/neurotone",
+    "id": 1357666038,
+    "head_backed_up": "66f65a3945747d78ab1ea5f8234fe99dad388890",
+    "deleted_at": "2026-10-03T16:09:45.836548+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/podforge",
+    "id": 1359650619,
+    "head_backed_up": "ec243533daf01f16d7ff56765cf78798dc95fad0",
+    "deleted_at": "2026-10-03T16:09:48.346105+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/priceforge",
+    "id": 1348152182,
+    "head_backed_up": "bbab8a33c5d953253b17186e95aa6d2011825d7e",
+    "deleted_at": "2026-10-03T16:09:51.237879+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/resi-flow",
+    "id": 1350246947,
+    "head_backed_up": "4d3480df01893149f0ffdb9c6ef41f35e1315edf",
+    "deleted_at": "2026-10-03T16:09:54.045742+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/rosari-commerce",
+    "id": 1346829300,
+    "head_backed_up": "2ca2b8fb234682c395ecd5e6f745f2dbaeeb91e4",
+    "deleted_at": "2026-10-03T16:09:56.439244+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/routineflow",
+    "id": 1362421410,
+    "head_backed_up": "d1b29c92c3a1396a62fd28fd20055bb8c6b4248c",
+    "deleted_at": "2026-10-03T16:09:58.764909+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/shaderforge",
+    "id": 1356644181,
+    "head_backed_up": "2f8aee98a9f21d3a27b534cec2dc0abf3f53ecb6",
+    "deleted_at": "2026-10-03T16:10:01.041994+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/socsynth-studio",
+    "id": 1352250578,
+    "head_backed_up": "c81db31cf5a3d3c8213c8d9c37bb28851e54d033",
+    "deleted_at": "2026-10-03T16:10:03.422067+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/socsynth-studio-new",
+    "id": 1352278067,
+    "head_backed_up": "e5d09a1e11612940a85b3628a81e2d6f8df4d8e8",
+    "deleted_at": "2026-10-03T16:10:05.821544+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/tripforge",
+    "id": 1349176529,
+    "head_backed_up": "a8f616938f133028296fe349a7763718248618e5",
+    "deleted_at": "2026-10-03T16:10:08.285022+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/voiceforge-studio",
+    "id": 1352940455,
+    "head_backed_up": "75521cc8ec47f4c885ee040b86a390b64428431e",
+    "deleted_at": "2026-10-03T16:10:11.009319+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/waconvert",
+    "id": 1345481532,
+    "head_backed_up": "473be55286b426e96f11c4c39e255758b36af871",
+    "deleted_at": "2026-10-03T16:10:14.113749+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/wahagenius-crm",
+    "id": 1359578037,
+    "head_backed_up": "f9755df76a907b9bb10a1fee72a0f4001de7de37",
+    "deleted_at": "2026-10-03T16:10:16.455639+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/warungrosari",
+    "id": 1342484964,
+    "head_backed_up": "c8bff4209c502f2a07497c6c1fff66f36f88fd7b",
+    "deleted_at": "2026-10-03T16:10:18.863760+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  },
+  {
+    "repository": "Zwart04/zwart-2026-08-31-socsynth-studio",
+    "id": 1352084056,
+    "head_backed_up": "3583984fa453ce766824e610b4d8b705e94d925c",
+    "deleted_at": "2026-10-03T16:10:21.313002+00:00",
+    "confirmed_http": 404,
+    "backup_sha256": "9b902745a04cd6a9e1b44f1fd444b3de1c033da80de345b9d0f812d21887e1ea"
+  }
+]

@@ -4,7 +4,7 @@ Eleven real applications, one private backend, and one recovery archive. This re
 
 **Directory:** https://projects-app.zwart.qzz.io/
 
-See [REBUILD-PLAN.md](REBUILD-PLAN.md), [docs/BACKEND.md](docs/BACKEND.md), and [VERIFICATION.json](VERIFICATION.json).
+See [REBUILD-PLAN.md](REBUILD-PLAN.md), [docs/BACKEND.md](docs/BACKEND.md), and [VERIFICATION.json](VERIFICATION.json), and [FINAL-REPORT.md](FINAL-REPORT.md).
 
 ```sh
 npm ci

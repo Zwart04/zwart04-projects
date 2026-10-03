@@ -1,0 +1,195 @@
+{
+  "verified_at": "2026-10-03T16:05:19.884358+00:00",
+  "checks": [
+    {
+      "source": "habitflow",
+      "status": 301,
+      "location": "https://daily-apps-app.zwart.qzz.io/"
+    },
+    {
+      "source": "habitgrid",
+      "status": 301,
+      "location": "https://daily-apps-app.zwart.qzz.io/"
+    },
+    {
+      "source": "routineflow",
+      "status": 301,
+      "location": "https://daily-apps-app.zwart.qzz.io/"
+    },
+    {
+      "source": "hearth-os",
+      "status": 301,
+      "location": "https://daily-apps-app.zwart.qzz.io/"
+    },
+    {
+      "source": "tripforge",
+      "status": 301,
+      "location": "https://daily-apps-app.zwart.qzz.io/"
+    },
+    {
+      "source": "rosari-commerce",
+      "status": 301,
+      "location": "https://daganghub-app.zwart.qzz.io/"
+    },
+    {
+      "source": "warungrosari",
+      "status": 301,
+      "location": "https://daganghub-app.zwart.qzz.io/"
+    },
+    {
+      "source": "waconvert",
+      "status": 301,
+      "location": "https://daganghub-app.zwart.qzz.io/"
+    },
+    {
+      "source": "wahagenius-crm",
+      "status": 301,
+      "location": "https://daganghub-app.zwart.qzz.io/"
+    },
+    {
+      "source": "ledger",
+      "status": 301,
+      "location": "https://daganghub-app.zwart.qzz.io/"
+    },
+    {
+      "source": "ledgerflow",
+      "status": 301,
+      "location": "https://daganghub-app.zwart.qzz.io/"
+    },
+    {
+      "source": "invensight",
+      "status": 301,
+      "location": "https://daganghub-app.zwart.qzz.io/"
+    },
+    {
+      "source": "priceforge",
+      "status": 301,
+      "location": "https://daganghub-app.zwart.qzz.io/"
+    },
+    {
+      "source": "menumaster",
+      "status": 301,
+      "location": "https://daganghub-app.zwart.qzz.io/"
+    },
+    {
+      "source": "motopart",
+      "status": 301,
+      "location": "https://daganghub-app.zwart.qzz.io/"
+    },
+    {
+      "source": "attribution-hub",
+      "status": 301,
+      "location": "https://daganghub-app.zwart.qzz.io/"
+    },
+    {
+      "source": "resi-flow",
+      "status": 301,
+      "location": "https://daganghub-app.zwart.qzz.io/"
+    },
+    {
+      "source": "mediaforge",
+      "status": 301,
+      "location": "https://renderforge-app.zwart.qzz.io/"
+    },
+    {
+      "source": "clipforge",
+      "status": 301,
+      "location": "https://renderforge-app.zwart.qzz.io/"
+    },
+    {
+      "source": "clipforge-ai",
+      "status": 301,
+      "location": "https://renderforge-app.zwart.qzz.io/"
+    },
+    {
+      "source": "neurotone",
+      "status": 301,
+      "location": "https://renderforge-app.zwart.qzz.io/"
+    },
+    {
+      "source": "audiomind-studio",
+      "status": 301,
+      "location": "https://renderforge-app.zwart.qzz.io/"
+    },
+    {
+      "source": "socsynth-studio",
+      "status": 301,
+      "location": "https://renderforge-app.zwart.qzz.io/"
+    },
+    {
+      "source": "socsynth-studio-new",
+      "status": 301,
+      "location": "https://renderforge-app.zwart.qzz.io/"
+    },
+    {
+      "source": "zwart-2026-08-31-socsynth-studio",
+      "status": 301,
+      "location": "https://renderforge-app.zwart.qzz.io/"
+    },
+    {
+      "source": "podforge",
+      "status": 301,
+      "location": "https://renderforge-app.zwart.qzz.io/"
+    },
+    {
+      "source": "voiceforge-studio",
+      "status": 301,
+      "location": "https://renderforge-app.zwart.qzz.io/"
+    },
+    {
+      "source": "moodcanvas",
+      "status": 301,
+      "location": "https://renderforge-app.zwart.qzz.io/"
+    },
+    {
+      "source": "courseforge",
+      "status": 301,
+      "location": "https://tutormind-app.zwart.qzz.io/"
+    },
+    {
+      "source": "inventa",
+      "status": 301,
+      "location": "https://tutormind-app.zwart.qzz.io/"
+    },
+    {
+      "source": "bookflow",
+      "status": 301,
+      "location": "https://servora-app.zwart.qzz.io/"
+    },
+    {
+      "source": "fieldroute-os",
+      "status": 301,
+      "location": "https://servora-app.zwart.qzz.io/"
+    },
+    {
+      "source": "fleetmile",
+      "status": 301,
+      "location": "https://servora-app.zwart.qzz.io/"
+    },
+    {
+      "source": "farmlog",
+      "status": 301,
+      "location": "https://aquapure-app.zwart.qzz.io/"
+    },
+    {
+      "source": "carbontrack",
+      "status": 301,
+      "location": "https://aquapure-app.zwart.qzz.io/"
+    },
+    {
+      "source": "lawbot",
+      "status": 301,
+      "location": "https://legalbot-garuda-app.zwart.qzz.io/"
+    },
+    {
+      "source": "legalbotgaruda",
+      "status": 301,
+      "location": "https://legalbot-garuda-app.zwart.qzz.io/"
+    },
+    {
+      "source": "shaderforge",
+      "status": 301,
+      "location": "https://gridcraft-app.zwart.qzz.io/"
+    }
+  ]
+}
