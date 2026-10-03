@@ -1,4 +1,8 @@
 node_modules/
-out/
+dist/
 .wrangler/
-.env*
+.env
+.env.*
+.dev.vars
+*.log
+__pycache__/

@@ -1,0 +1,22 @@
+PRAGMA foreign_keys = ON;
+CREATE TABLE IF NOT EXISTS users (id TEXT PRIMARY KEY, email TEXT NOT NULL UNIQUE, name TEXT NOT NULL, password_hash TEXT NOT NULL, recovery_hash TEXT NOT NULL, created_at INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS sessions (token_hash TEXT PRIMARY KEY, user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE, csrf TEXT NOT NULL, expires_at INTEGER NOT NULL, created_at INTEGER NOT NULL);
+CREATE INDEX IF NOT EXISTS sessions_user ON sessions(user_id);
+CREATE TABLE IF NOT EXISTS workspaces (id TEXT PRIMARY KEY, product TEXT NOT NULL, name TEXT NOT NULL, owner_id TEXT NOT NULL REFERENCES users(id), created_at INTEGER NOT NULL);
+CREATE INDEX IF NOT EXISTS workspaces_product ON workspaces(product);
+CREATE TABLE IF NOT EXISTS members (workspace_id TEXT NOT NULL REFERENCES workspaces(id) ON DELETE CASCADE, user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE, role TEXT NOT NULL CHECK(role IN ('owner','editor','viewer')), PRIMARY KEY(workspace_id,user_id));
+CREATE INDEX IF NOT EXISTS members_user ON members(user_id);
+CREATE TABLE IF NOT EXISTS invitations (id TEXT PRIMARY KEY, workspace_id TEXT NOT NULL REFERENCES workspaces(id) ON DELETE CASCADE, email TEXT NOT NULL, role TEXT NOT NULL CHECK(role IN ('editor','viewer')), token_hash TEXT NOT NULL UNIQUE, expires_at INTEGER NOT NULL, accepted_at INTEGER);
+CREATE TABLE IF NOT EXISTS records (id TEXT PRIMARY KEY, workspace_id TEXT NOT NULL REFERENCES workspaces(id) ON DELETE CASCADE, kind TEXT NOT NULL, title TEXT NOT NULL, status TEXT NOT NULL, data TEXT NOT NULL CHECK(json_valid(data)), version INTEGER NOT NULL DEFAULT 1, created_at INTEGER NOT NULL, updated_at INTEGER NOT NULL, deleted_at INTEGER);
+CREATE INDEX IF NOT EXISTS records_list ON records(workspace_id,kind,deleted_at,updated_at DESC);
+CREATE INDEX IF NOT EXISTS records_status ON records(workspace_id,kind,status,deleted_at);
+CREATE TABLE IF NOT EXISTS audit (id TEXT PRIMARY KEY, workspace_id TEXT NOT NULL REFERENCES workspaces(id) ON DELETE CASCADE, actor_id TEXT NOT NULL REFERENCES users(id), action TEXT NOT NULL, record_id TEXT, detail TEXT NOT NULL, created_at INTEGER NOT NULL);
+CREATE INDEX IF NOT EXISTS audit_workspace ON audit(workspace_id,created_at DESC);
+CREATE TABLE IF NOT EXISTS rate_limits (bucket TEXT PRIMARY KEY, count INTEGER NOT NULL, expires_at INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS workflow_keys (workspace_id TEXT NOT NULL REFERENCES workspaces(id), action TEXT NOT NULL, idempotency_key TEXT NOT NULL, result TEXT NOT NULL, created_at INTEGER NOT NULL, valid INTEGER NOT NULL DEFAULT 1 CHECK(valid=1), PRIMARY KEY(workspace_id,action,idempotency_key));
+CREATE UNIQUE INDEX IF NOT EXISTS unique_checkin ON records(workspace_id,json_extract(data,'$.habit_id'),json_extract(data,'$.date')) WHERE kind='checkins' AND deleted_at IS NULL;
+CREATE UNIQUE INDEX IF NOT EXISTS unique_sku ON records(workspace_id,json_extract(data,'$.sku')) WHERE kind='products' AND deleted_at IS NULL;
+CREATE TABLE IF NOT EXISTS sensor_keys (hash TEXT PRIMARY KEY, workspace_id TEXT NOT NULL REFERENCES workspaces(id) ON DELETE CASCADE, created_at INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS ai_messages (id TEXT PRIMARY KEY, workspace_id TEXT NOT NULL REFERENCES workspaces(id) ON DELETE CASCADE, user_id TEXT NOT NULL REFERENCES users(id), prompt TEXT NOT NULL, answer TEXT NOT NULL, model TEXT NOT NULL, created_at INTEGER NOT NULL);
+
+CREATE TABLE IF NOT EXISTS public_forms(record_id TEXT PRIMARY KEY REFERENCES records(id) ON DELETE CASCADE, token_hash TEXT NOT NULL UNIQUE);

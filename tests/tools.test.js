@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {parseCSV,csvObjects,markdown} from '../client/conversion.js';
+import {encodeWav,trimAudio} from '../client/media.js';
+test('CSV preserves quoted commas, multiline UTF-8 and escaped quotes',()=>{assert.deepEqual(parseCSV('name,note\r\n"Raka","satu, dua\n\"\"kutip\"\""'),[['name','note'],['Raka','satu, dua\n"kutip"']]);assert.throws(()=>csvObjects('a,a\n1,2'));assert.throws(()=>parseCSV('"unclosed'));});
+test('HTML conversion escapes executable content',()=>{assert.equal(markdown('# <script>alert(1)</script>'),'<h1>&lt;script&gt;alert(1)&lt;/script&gt;</h1>');});
+test('WAV contains real PCM samples and accurate duration after trimming',async()=>{const channel=new Float32Array([0,.25,.5,.75,-1,0]);const buffer={duration:.006,sampleRate:1000,length:6,numberOfChannels:1,getChannelData:()=>channel};const wav=trimAudio(buffer,.001,.005,1,false);const v=new DataView(await wav.arrayBuffer());assert.equal(v.getUint32(40,true),8);assert.equal(v.getInt16(44,true),8191);assert.equal(v.getInt16(50,true),-32768);assert.throws(()=>trimAudio(buffer,.005,.001));assert.throws(()=>encodeWav([channel,new Float32Array(1)],1000));});

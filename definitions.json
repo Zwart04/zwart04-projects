@@ -1,0 +1,4197 @@
+{
+  "daily-apps": {
+    "accent": "#93c840",
+    "currency": "IDR",
+    "tagline": "Make room for a better day.",
+    "modules": [
+      {
+        "key": "day-view",
+        "label": "Rencana hari",
+        "tool": "day-planner",
+        "fields": [],
+        "statuses": []
+      },
+      {
+        "key": "tasks",
+        "label": "Tugas",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "priority",
+            "label": "Prioritas",
+            "type": "select",
+            "options": [
+              "low",
+              "normal",
+              "high"
+            ]
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "todo",
+          "doing",
+          "done"
+        ]
+      },
+      {
+        "key": "habits",
+        "label": "Kebiasaan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "frequency",
+            "label": "Frekuensi",
+            "type": "select",
+            "options": [
+              "daily",
+              "weekly"
+            ]
+          },
+          {
+            "key": "target",
+            "label": "Target per minggu",
+            "type": "number",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "checkins",
+        "label": "Check-in",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "habit_id",
+            "label": "Kebiasaan",
+            "type": "ref",
+            "ref": "habits",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "completed",
+          "missed"
+        ]
+      },
+      {
+        "key": "routines",
+        "label": "Rutinitas",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "steps",
+            "label": "Langkah (satu per baris)",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "key": "time",
+            "label": "Jam mulai",
+            "type": "time"
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "routine_runs",
+        "label": "Sesi rutinitas",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "routine_id",
+            "label": "Rutinitas",
+            "type": "ref",
+            "ref": "routines",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "completed_steps",
+            "label": "Indeks langkah selesai",
+            "type": "json"
+          }
+        ],
+        "statuses": [
+          "active",
+          "done"
+        ]
+      },
+      {
+        "key": "goals",
+        "label": "Target",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "target",
+            "label": "Target angka",
+            "type": "number",
+            "min": 1
+          },
+          {
+            "key": "current",
+            "label": "Pencapaian",
+            "type": "number",
+            "min": 0
+          },
+          {
+            "key": "unit",
+            "label": "Satuan",
+            "type": "text"
+          },
+          {
+            "key": "deadline",
+            "label": "Tenggat",
+            "type": "date"
+          }
+        ],
+        "statuses": [
+          "active",
+          "done"
+        ]
+      },
+      {
+        "key": "notes",
+        "label": "Catatan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "body",
+            "label": "Isi catatan",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "key": "tags",
+            "label": "Tag",
+            "type": "text"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "budget",
+        "label": "Anggaran",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "type",
+            "label": "Jenis",
+            "type": "select",
+            "options": [
+              "income",
+              "expense"
+            ]
+          },
+          {
+            "key": "amount",
+            "label": "Jumlah",
+            "type": "money"
+          },
+          {
+            "key": "category",
+            "label": "Kategori",
+            "type": "text"
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "trips",
+        "label": "Perjalanan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "destination",
+            "label": "Tujuan",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "start_date",
+            "label": "Tanggal berangkat",
+            "type": "date"
+          },
+          {
+            "key": "end_date",
+            "label": "Tanggal pulang",
+            "type": "date"
+          },
+          {
+            "key": "budget",
+            "label": "Anggaran",
+            "type": "money"
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "planning",
+          "booked",
+          "active",
+          "done"
+        ]
+      },
+      {
+        "key": "itinerary",
+        "label": "Itinerary",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "trip_id",
+            "label": "Perjalanan",
+            "type": "ref",
+            "ref": "trips",
+            "required": true
+          },
+          {
+            "key": "start",
+            "label": "Mulai",
+            "type": "datetime",
+            "required": true
+          },
+          {
+            "key": "end",
+            "label": "Selesai",
+            "type": "datetime",
+            "required": true
+          },
+          {
+            "key": "location",
+            "label": "Lokasi",
+            "type": "text"
+          },
+          {
+            "key": "cost",
+            "label": "Biaya",
+            "type": "money"
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "letters",
+        "label": "Surat terjadwal",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "body",
+            "label": "Isi surat",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "key": "unlock_at",
+            "label": "Buka pada",
+            "type": "datetime",
+            "required": true
+          }
+        ],
+        "statuses": [
+          "sealed"
+        ]
+      },
+      {
+        "key": "drafts",
+        "label": "Dokumen & draft",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "type",
+            "label": "Jenis",
+            "type": "select",
+            "options": [
+              "html",
+              "form",
+              "theme",
+              "data",
+              "text"
+            ]
+          },
+          {
+            "key": "content",
+            "label": "Isi",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "forms",
+        "label": "Form online",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "description",
+            "label": "Deskripsi",
+            "type": "textarea"
+          },
+          {
+            "key": "fields",
+            "label": "Field form",
+            "type": "json",
+            "required": true
+          }
+        ],
+        "statuses": [
+          "draft",
+          "published",
+          "closed"
+        ],
+        "actions": [
+          "publish-form"
+        ]
+      },
+      {
+        "key": "form_responses",
+        "label": "Respons form",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "form_id",
+            "label": "Form",
+            "type": "ref",
+            "ref": "forms",
+            "required": true
+          },
+          {
+            "key": "answers",
+            "label": "Jawaban",
+            "type": "json"
+          },
+          {
+            "key": "received_at",
+            "label": "Waktu diterima",
+            "type": "datetime"
+          }
+        ],
+        "statuses": [
+          "received"
+        ]
+      },
+      {
+        "key": "daily-tools",
+        "label": "Alat kerja",
+        "tool": "daily-tools",
+        "fields": []
+      },
+      {
+        "key": "calendar",
+        "label": "Kalender",
+        "tool": "calendar",
+        "fields": []
+      },
+      {
+        "key": "word_cards",
+        "label": "Bank kata",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Kata",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "definition",
+            "label": "Definisi Anda",
+            "type": "textarea",
+            "required": true
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "word-practice",
+        "label": "Kata kilat",
+        "tool": "word-practice",
+        "fields": [],
+        "statuses": []
+      },
+      {
+        "key": "reports",
+        "label": "Laporan",
+        "tool": "reports",
+        "fields": [],
+        "statuses": []
+      }
+    ],
+    "id": "daily-apps",
+    "name": "DailyOS",
+    "purpose": "Satu workspace pribadi untuk perencanaan, kebiasaan, dokumen dan alat kerja sehari-hari.",
+    "sources": [
+      "daily-apps",
+      "habitflow",
+      "habitgrid",
+      "routineflow",
+      "hearth-os",
+      "tripforge"
+    ],
+    "workflow": "Daftar → simpan kode pemulihan → buat workspace → rencanakan hari → check-in/tugas → laporan progres. Dokumen dan hasil tool dapat disimpan sebagai bagian workspace."
+  },
+  "daganghub": {
+    "accent": "#f09545",
+    "currency": "IDR",
+    "tagline": "From first order to a growing business.",
+    "modules": [
+      {
+        "key": "products",
+        "label": "Produk",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "sku",
+            "label": "SKU",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "price",
+            "label": "Harga jual",
+            "type": "money",
+            "required": true
+          },
+          {
+            "key": "cost",
+            "label": "Harga modal",
+            "type": "money"
+          },
+          {
+            "key": "stock",
+            "label": "Stok",
+            "type": "number",
+            "required": true,
+            "min": 0
+          },
+          {
+            "key": "category",
+            "label": "Kategori",
+            "type": "text"
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "customers",
+        "label": "Pelanggan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "email",
+            "label": "Email",
+            "type": "email"
+          },
+          {
+            "key": "phone",
+            "label": "Nomor telepon",
+            "type": "text"
+          },
+          {
+            "key": "address",
+            "label": "Alamat",
+            "type": "textarea"
+          },
+          {
+            "key": "tags",
+            "label": "Tag",
+            "type": "text"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "suppliers",
+        "label": "Pemasok",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "email",
+            "label": "Email",
+            "type": "email"
+          },
+          {
+            "key": "phone",
+            "label": "Nomor telepon",
+            "type": "text"
+          },
+          {
+            "key": "address",
+            "label": "Alamat",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "orders",
+        "label": "Pesanan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "customer_id",
+            "label": "Pelanggan",
+            "type": "ref",
+            "ref": "customers",
+            "required": true
+          },
+          {
+            "key": "items",
+            "label": "Item pesanan",
+            "type": "items",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "draft",
+          "confirmed",
+          "paid",
+          "shipped",
+          "completed",
+          "cancelled"
+        ],
+        "actions": [
+          "confirm-order",
+          "invoice-order",
+          "pay-order",
+          "ship-order",
+          "complete-order",
+          "cancel-order"
+        ]
+      },
+      {
+        "key": "invoices",
+        "label": "Invoice",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "order_id",
+            "label": "Pesanan",
+            "type": "ref",
+            "ref": "orders",
+            "required": false
+          },
+          {
+            "key": "customer_id",
+            "label": "Pelanggan",
+            "type": "ref",
+            "ref": "customers",
+            "required": false
+          },
+          {
+            "key": "amount",
+            "label": "Jumlah",
+            "type": "money"
+          },
+          {
+            "key": "due_date",
+            "label": "Jatuh tempo",
+            "type": "date"
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "unpaid",
+          "paid",
+          "void"
+        ]
+      },
+      {
+        "key": "expenses",
+        "label": "Pengeluaran",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "amount",
+            "label": "Jumlah",
+            "type": "money"
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "category",
+            "label": "Kategori",
+            "type": "text"
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "stock_movements",
+        "label": "Mutasi stok",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "product_id",
+            "label": "Produk",
+            "type": "ref",
+            "ref": "products",
+            "required": true
+          },
+          {
+            "key": "quantity",
+            "label": "Perubahan stok (+/-)",
+            "type": "number",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "pending",
+          "posted"
+        ],
+        "actions": [
+          "post-stock"
+        ]
+      },
+      {
+        "key": "campaigns",
+        "label": "Kampanye",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "channel",
+            "label": "Kanal",
+            "type": "text"
+          },
+          {
+            "key": "visits",
+            "label": "Kunjungan",
+            "type": "number",
+            "min": 0
+          },
+          {
+            "key": "leads",
+            "label": "Lead",
+            "type": "number",
+            "min": 0
+          },
+          {
+            "key": "sales",
+            "label": "Transaksi",
+            "type": "number",
+            "min": 0
+          },
+          {
+            "key": "revenue",
+            "label": "Pendapatan",
+            "type": "money"
+          },
+          {
+            "key": "spend",
+            "label": "Biaya",
+            "type": "money"
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "shipments",
+        "label": "Pengiriman",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "order_id",
+            "label": "Pesanan",
+            "type": "ref",
+            "ref": "orders",
+            "required": true
+          },
+          {
+            "key": "carrier",
+            "label": "Kurir",
+            "type": "text"
+          },
+          {
+            "key": "tracking",
+            "label": "Nomor resi",
+            "type": "text"
+          },
+          {
+            "key": "address",
+            "label": "Alamat",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "pending",
+          "shipped",
+          "delivered"
+        ]
+      },
+      {
+        "key": "menus",
+        "label": "Menu & bundel",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "items",
+            "label": "Isi produk",
+            "type": "items",
+            "required": true
+          },
+          {
+            "key": "price",
+            "label": "Harga bundel",
+            "type": "money"
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "contacts",
+        "label": "CRM aktivitas",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "customer_id",
+            "label": "Pelanggan",
+            "type": "ref",
+            "ref": "customers",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "channel",
+            "label": "Kanal",
+            "type": "select",
+            "options": [
+              "whatsapp",
+              "phone",
+              "email",
+              "meeting"
+            ]
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "planned",
+          "done"
+        ]
+      },
+      {
+        "key": "pricing",
+        "label": "Kalkulator margin",
+        "tool": "pricing",
+        "fields": []
+      },
+      {
+        "key": "reports",
+        "label": "Laporan",
+        "tool": "reports",
+        "fields": [],
+        "statuses": []
+      }
+    ],
+    "id": "daganghub",
+    "name": "DagangHub",
+    "purpose": "Sistem operasional usaha dari produk dan pelanggan sampai pesanan, stok, invoice, pemasaran dan pengiriman.",
+    "sources": [
+      "daganghub",
+      "rosari-commerce",
+      "warungrosari",
+      "waconvert",
+      "wahagenius-crm",
+      "ledger",
+      "ledgerflow",
+      "invensight",
+      "priceforge",
+      "menumaster",
+      "motopart",
+      "attribution-hub",
+      "resi-flow"
+    ],
+    "workflow": "Produk + pelanggan → pesanan draft → konfirmasi dengan pemeriksaan stok atomik → invoice → pembayaran → pengiriman → laporan; pembatalan mengembalikan stok tepat sekali."
+  },
+  "renderforge": {
+    "accent": "#b6a0ed",
+    "currency": "IDR",
+    "tagline": "One story. Every creative tool.",
+    "modules": [
+      {
+        "key": "projects",
+        "label": "Proyek",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "description",
+            "label": "Deskripsi",
+            "type": "textarea"
+          },
+          {
+            "key": "deadline",
+            "label": "Target selesai",
+            "type": "date"
+          }
+        ],
+        "statuses": [
+          "planning",
+          "active",
+          "review",
+          "done"
+        ]
+      },
+      {
+        "key": "assets",
+        "label": "Asset library",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": true
+          },
+          {
+            "key": "type",
+            "label": "Jenis",
+            "type": "select",
+            "options": [
+              "image",
+              "audio",
+              "video",
+              "document"
+            ]
+          },
+          {
+            "key": "filename",
+            "label": "Nama berkas",
+            "type": "text"
+          },
+          {
+            "key": "description",
+            "label": "Deskripsi",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "storyboards",
+        "label": "Storyboard",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": true
+          },
+          {
+            "key": "position",
+            "label": "Urutan",
+            "type": "number",
+            "min": 0
+          },
+          {
+            "key": "script",
+            "label": "Naskah",
+            "type": "textarea"
+          },
+          {
+            "key": "duration",
+            "label": "Durasi detik",
+            "type": "number",
+            "min": 0
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "timelines",
+        "label": "Timeline",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": true
+          },
+          {
+            "key": "clips",
+            "label": "Klip timeline",
+            "type": "json"
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "scripts",
+        "label": "Naskah & podcast",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": true
+          },
+          {
+            "key": "body",
+            "label": "Naskah",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "key": "speaker",
+            "label": "Pembicara",
+            "type": "text"
+          }
+        ],
+        "statuses": [
+          "draft",
+          "review",
+          "approved",
+          "published"
+        ]
+      },
+      {
+        "key": "moodboards",
+        "label": "Moodboard",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": true
+          },
+          {
+            "key": "palette",
+            "label": "Palet warna",
+            "type": "text"
+          },
+          {
+            "key": "description",
+            "label": "Arahan visual",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "publishing",
+        "label": "Publikasi",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": true
+          },
+          {
+            "key": "channel",
+            "label": "Kanal",
+            "type": "text"
+          },
+          {
+            "key": "start",
+            "label": "Mulai",
+            "type": "datetime",
+            "required": true
+          },
+          {
+            "key": "caption",
+            "label": "Caption",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "draft",
+          "scheduled",
+          "published"
+        ]
+      },
+      {
+        "key": "versions",
+        "label": "Versi proyek",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": true
+          },
+          {
+            "key": "content",
+            "label": "Data versi",
+            "type": "json"
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "creative-studio",
+        "label": "Editor media",
+        "tool": "media-studio",
+        "fields": []
+      },
+      {
+        "key": "assistant",
+        "label": "Asisten kreatif",
+        "tool": "ai",
+        "fields": []
+      },
+      {
+        "key": "reports",
+        "label": "Laporan",
+        "tool": "reports",
+        "fields": [],
+        "statuses": []
+      }
+    ],
+    "id": "renderforge",
+    "name": "RenderForge Studio",
+    "purpose": "Studio kreatif dengan satu proyek, asset library, timeline, audio dan paket publikasi.",
+    "sources": [
+      "renderforge",
+      "mediaforge",
+      "clipforge",
+      "clipforge-ai",
+      "neurotone",
+      "audiomind-studio",
+      "socsynth-studio",
+      "socsynth-studio-new",
+      "zwart-2026-08-31-socsynth-studio",
+      "podforge",
+      "voiceforge-studio",
+      "moodcanvas"
+    ],
+    "workflow": "Buat proyek → impor aset → susun storyboard/timeline → edit audio atau visual → preview → ekspor media dan simpan catatan versi di proyek yang sama."
+  },
+  "tutormind": {
+    "accent": "#779cf0",
+    "currency": "IDR",
+    "tagline": "Turn curiosity into progress.",
+    "modules": [
+      {
+        "key": "courses",
+        "label": "Kursus",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "description",
+            "label": "Deskripsi",
+            "type": "textarea"
+          },
+          {
+            "key": "level",
+            "label": "Tingkat",
+            "type": "text"
+          }
+        ],
+        "statuses": [
+          "draft",
+          "published",
+          "archived"
+        ]
+      },
+      {
+        "key": "lessons",
+        "label": "Materi",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "course_id",
+            "label": "Kursus",
+            "type": "ref",
+            "ref": "courses",
+            "required": true
+          },
+          {
+            "key": "position",
+            "label": "Urutan",
+            "type": "number",
+            "min": 0
+          },
+          {
+            "key": "body",
+            "label": "Materi",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "key": "duration",
+            "label": "Estimasi menit",
+            "type": "number",
+            "min": 1
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "enrollments",
+        "label": "Pendaftaran belajar",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "course_id",
+            "label": "Kursus",
+            "type": "ref",
+            "ref": "courses",
+            "required": true
+          },
+          {
+            "key": "learner",
+            "label": "Nama pelajar",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          }
+        ],
+        "statuses": [
+          "active",
+          "completed"
+        ]
+      },
+      {
+        "key": "study_sessions",
+        "label": "Sesi belajar",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "course_id",
+            "label": "Kursus",
+            "type": "ref",
+            "ref": "courses",
+            "required": true
+          },
+          {
+            "key": "lesson_id",
+            "label": "Materi",
+            "type": "ref",
+            "ref": "lessons",
+            "required": false
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "minutes",
+            "label": "Menit belajar",
+            "type": "number",
+            "min": 1
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "planned",
+          "done"
+        ]
+      },
+      {
+        "key": "flashcards",
+        "label": "Flashcard",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "course_id",
+            "label": "Kursus",
+            "type": "ref",
+            "ref": "courses",
+            "required": true
+          },
+          {
+            "key": "question",
+            "label": "Pertanyaan",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "key": "answer",
+            "label": "Jawaban",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "key": "next_review",
+            "label": "Review berikutnya",
+            "type": "date"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "quizzes",
+        "label": "Kuis",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "course_id",
+            "label": "Kursus",
+            "type": "ref",
+            "ref": "courses",
+            "required": true
+          },
+          {
+            "key": "questions",
+            "label": "Pertanyaan & kunci",
+            "type": "quiz",
+            "required": true
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "attempts",
+        "label": "Hasil latihan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "quiz_id",
+            "label": "Kuis",
+            "type": "ref",
+            "ref": "quizzes",
+            "required": true
+          },
+          {
+            "key": "answers",
+            "label": "Jawaban",
+            "type": "json"
+          },
+          {
+            "key": "score",
+            "label": "Nilai",
+            "type": "number",
+            "min": 0,
+            "max": 100
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          }
+        ],
+        "statuses": [
+          "submitted"
+        ]
+      },
+      {
+        "key": "assignments",
+        "label": "Tugas",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "course_id",
+            "label": "Kursus",
+            "type": "ref",
+            "ref": "courses",
+            "required": true
+          },
+          {
+            "key": "body",
+            "label": "Instruksi",
+            "type": "textarea"
+          },
+          {
+            "key": "deadline",
+            "label": "Tenggat",
+            "type": "date"
+          }
+        ],
+        "statuses": [
+          "todo",
+          "submitted",
+          "graded"
+        ]
+      },
+      {
+        "key": "notes",
+        "label": "Catatan belajar",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "course_id",
+            "label": "Kursus",
+            "type": "ref",
+            "ref": "courses",
+            "required": false
+          },
+          {
+            "key": "body",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "learn",
+        "label": "Ruang belajar",
+        "tool": "learning",
+        "fields": []
+      },
+      {
+        "key": "assistant",
+        "label": "Tutor AI",
+        "tool": "ai",
+        "fields": []
+      },
+      {
+        "key": "reports",
+        "label": "Laporan",
+        "tool": "reports",
+        "fields": [],
+        "statuses": []
+      }
+    ],
+    "id": "tutormind",
+    "name": "TutorMind Academy",
+    "purpose": "Platform belajar dan pembuatan kursus dengan materi, latihan, penilaian dan progres nyata.",
+    "sources": [
+      "tutormind",
+      "courseforge",
+      "inventa"
+    ],
+    "workflow": "Buat kursus → materi → belajar → latihan flashcard/kuis → kirim jawaban → penilaian dari kunci jawaban → progres; bantuan AI dipanggil dari backend."
+  },
+  "servora": {
+    "accent": "#58bfc3",
+    "currency": "IDR",
+    "tagline": "Every booking. Every team. One operation.",
+    "modules": [
+      {
+        "key": "customers",
+        "label": "Pelanggan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "email",
+            "label": "Email",
+            "type": "email"
+          },
+          {
+            "key": "phone",
+            "label": "Nomor telepon",
+            "type": "text"
+          },
+          {
+            "key": "address",
+            "label": "Alamat",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "services",
+        "label": "Layanan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "price",
+            "label": "Tarif",
+            "type": "money"
+          },
+          {
+            "key": "minutes",
+            "label": "Durasi menit",
+            "type": "number",
+            "min": 1
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "technicians",
+        "label": "Teknisi",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "email",
+            "label": "Email",
+            "type": "email"
+          },
+          {
+            "key": "phone",
+            "label": "Nomor telepon",
+            "type": "text"
+          },
+          {
+            "key": "skills",
+            "label": "Keahlian",
+            "type": "text"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "vehicles",
+        "label": "Kendaraan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "plate",
+            "label": "Nomor polisi",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "mileage",
+            "label": "Odometer km",
+            "type": "number",
+            "min": 0
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "bookings",
+        "label": "Booking",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "customer_id",
+            "label": "Pelanggan",
+            "type": "ref",
+            "ref": "customers",
+            "required": true
+          },
+          {
+            "key": "service_id",
+            "label": "Layanan",
+            "type": "ref",
+            "ref": "services",
+            "required": true
+          },
+          {
+            "key": "technician_id",
+            "label": "Teknisi",
+            "type": "ref",
+            "ref": "technicians",
+            "required": true
+          },
+          {
+            "key": "start",
+            "label": "Mulai",
+            "type": "datetime",
+            "required": true
+          },
+          {
+            "key": "end",
+            "label": "Selesai",
+            "type": "datetime",
+            "required": true
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "confirmed",
+          "in_progress",
+          "done",
+          "cancelled"
+        ],
+        "actions": [
+          "booking-job"
+        ]
+      },
+      {
+        "key": "jobs",
+        "label": "Pekerjaan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "booking_id",
+            "label": "Booking",
+            "type": "ref",
+            "ref": "bookings",
+            "required": false
+          },
+          {
+            "key": "technician_id",
+            "label": "Teknisi",
+            "type": "ref",
+            "ref": "technicians",
+            "required": true
+          },
+          {
+            "key": "vehicle_id",
+            "label": "Kendaraan",
+            "type": "ref",
+            "ref": "vehicles",
+            "required": false
+          },
+          {
+            "key": "lat",
+            "label": "Latitude",
+            "type": "number",
+            "min": -90,
+            "max": 90
+          },
+          {
+            "key": "lng",
+            "label": "Longitude",
+            "type": "number",
+            "min": -180,
+            "max": 180
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "todo",
+          "in_progress",
+          "done"
+        ]
+      },
+      {
+        "key": "checklists",
+        "label": "Checklist pekerjaan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "job_id",
+            "label": "Pekerjaan",
+            "type": "ref",
+            "ref": "jobs",
+            "required": true
+          },
+          {
+            "key": "steps",
+            "label": "Daftar langkah",
+            "type": "textarea"
+          },
+          {
+            "key": "completed_steps",
+            "label": "Langkah selesai",
+            "type": "json"
+          }
+        ],
+        "statuses": [
+          "active",
+          "done"
+        ]
+      },
+      {
+        "key": "expenses",
+        "label": "Biaya",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "job_id",
+            "label": "Pekerjaan",
+            "type": "ref",
+            "ref": "jobs",
+            "required": false
+          },
+          {
+            "key": "amount",
+            "label": "Jumlah",
+            "type": "money"
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "mileage",
+        "label": "Catatan jarak",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "vehicle_id",
+            "label": "Kendaraan",
+            "type": "ref",
+            "ref": "vehicles",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "distance",
+            "label": "Jarak km",
+            "type": "number",
+            "min": 0
+          },
+          {
+            "key": "fuel",
+            "label": "Bahan bakar liter",
+            "type": "number",
+            "min": 0
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "route-planner",
+        "label": "Rencana rute",
+        "tool": "routes",
+        "fields": []
+      },
+      {
+        "key": "calendar",
+        "label": "Jadwal tim",
+        "tool": "calendar",
+        "fields": []
+      },
+      {
+        "key": "reports",
+        "label": "Laporan",
+        "tool": "reports",
+        "fields": [],
+        "statuses": []
+      }
+    ],
+    "id": "servora",
+    "name": "Servora Operations",
+    "purpose": "Operasi layanan dengan pemesanan, teknisi, pekerjaan lapangan dan kendaraan dalam satu jadwal.",
+    "sources": [
+      "servora",
+      "bookflow",
+      "fieldroute-os",
+      "fleetmile"
+    ],
+    "workflow": "Pelanggan → booking tanpa bentrok → pekerjaan + teknisi/kendaraan → checklist lapangan → selesai → biaya/jarak dan laporan operasional."
+  },
+  "aquapure": {
+    "accent": "#5bbc92",
+    "currency": "IDR",
+    "tagline": "Know your field. Act on your data.",
+    "modules": [
+      {
+        "key": "sites",
+        "label": "Lokasi",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "lat",
+            "label": "Latitude",
+            "type": "number",
+            "min": -90,
+            "max": 90
+          },
+          {
+            "key": "lng",
+            "label": "Longitude",
+            "type": "number",
+            "min": -180,
+            "max": 180
+          },
+          {
+            "key": "area",
+            "label": "Luas ha",
+            "type": "number",
+            "min": 0
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "sensors",
+        "label": "Sensor",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "site_id",
+            "label": "Lokasi",
+            "type": "ref",
+            "ref": "sites",
+            "required": true
+          },
+          {
+            "key": "identifier",
+            "label": "Identifier",
+            "type": "text"
+          },
+          {
+            "key": "type",
+            "label": "Jenis sensor",
+            "type": "text"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "water_samples",
+        "label": "Sampel air",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "site_id",
+            "label": "Lokasi",
+            "type": "ref",
+            "ref": "sites",
+            "required": true
+          },
+          {
+            "key": "sensor_id",
+            "label": "Sensor",
+            "type": "ref",
+            "ref": "sensors",
+            "required": false
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "ph",
+            "label": "pH",
+            "type": "number",
+            "required": true,
+            "min": 0,
+            "max": 14
+          },
+          {
+            "key": "turbidity",
+            "label": "Kekeruhan NTU",
+            "type": "number",
+            "min": 0
+          },
+          {
+            "key": "temperature",
+            "label": "Suhu °C",
+            "type": "number",
+            "min": -30,
+            "max": 100
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "thresholds",
+        "label": "Ambang pengukuran",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "site_id",
+            "label": "Lokasi",
+            "type": "ref",
+            "ref": "sites",
+            "required": true
+          },
+          {
+            "key": "metric",
+            "label": "Parameter",
+            "type": "select",
+            "options": [
+              "ph",
+              "turbidity",
+              "temperature"
+            ]
+          },
+          {
+            "key": "minimum",
+            "label": "Minimum",
+            "type": "number"
+          },
+          {
+            "key": "maximum",
+            "label": "Maximum",
+            "type": "number"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "alerts",
+        "label": "Alert",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "site_id",
+            "label": "Lokasi",
+            "type": "ref",
+            "ref": "sites",
+            "required": false
+          },
+          {
+            "key": "sample_id",
+            "label": "Sampel",
+            "type": "ref",
+            "ref": "water_samples",
+            "required": false
+          },
+          {
+            "key": "description",
+            "label": "Keterangan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "open",
+          "acknowledged",
+          "resolved"
+        ]
+      },
+      {
+        "key": "crops",
+        "label": "Tanaman",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "site_id",
+            "label": "Lokasi",
+            "type": "ref",
+            "ref": "sites",
+            "required": true
+          },
+          {
+            "key": "variety",
+            "label": "Varietas",
+            "type": "text"
+          },
+          {
+            "key": "planting_date",
+            "label": "Tanggal tanam",
+            "type": "date"
+          },
+          {
+            "key": "area",
+            "label": "Luas ha",
+            "type": "number",
+            "min": 0
+          }
+        ],
+        "statuses": [
+          "growing",
+          "harvested",
+          "closed"
+        ]
+      },
+      {
+        "key": "activities",
+        "label": "Aktivitas lapangan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "site_id",
+            "label": "Lokasi",
+            "type": "ref",
+            "ref": "sites",
+            "required": true
+          },
+          {
+            "key": "crop_id",
+            "label": "Tanaman",
+            "type": "ref",
+            "ref": "crops",
+            "required": false
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "planned",
+          "done"
+        ]
+      },
+      {
+        "key": "inputs",
+        "label": "Input pertanian",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "crop_id",
+            "label": "Tanaman",
+            "type": "ref",
+            "ref": "crops",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "quantity",
+            "label": "Jumlah",
+            "type": "number",
+            "min": 0
+          },
+          {
+            "key": "unit",
+            "label": "Satuan",
+            "type": "text"
+          },
+          {
+            "key": "cost",
+            "label": "Biaya",
+            "type": "money"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "harvests",
+        "label": "Panen",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "crop_id",
+            "label": "Tanaman",
+            "type": "ref",
+            "ref": "crops",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "weight",
+            "label": "Berat kg",
+            "type": "number",
+            "min": 0
+          },
+          {
+            "key": "revenue",
+            "label": "Pendapatan",
+            "type": "money"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "emissions",
+        "label": "Aktivitas emisi",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "quantity",
+            "label": "Aktivitas",
+            "type": "number",
+            "min": 0
+          },
+          {
+            "key": "factor",
+            "label": "Faktor kgCO2e per unit",
+            "type": "number",
+            "min": 0
+          },
+          {
+            "key": "source",
+            "label": "Sumber faktor",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "unit",
+            "label": "Unit",
+            "type": "text"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "field-map",
+        "label": "Peta lokasi",
+        "tool": "field-map",
+        "fields": []
+      },
+      {
+        "key": "ingestion",
+        "label": "Integrasi sensor",
+        "tool": "ingestion",
+        "fields": []
+      },
+      {
+        "key": "reports",
+        "label": "Laporan",
+        "tool": "reports",
+        "fields": [],
+        "statuses": []
+      }
+    ],
+    "id": "aquapure",
+    "name": "AquaPure Field Intelligence",
+    "purpose": "Workspace lapangan untuk pengukuran air, pertanian, input, hasil panen dan catatan emisi.",
+    "sources": [
+      "aquapure",
+      "farmlog",
+      "carbontrack"
+    ],
+    "workflow": "Lokasi → pengukuran manual atau API sensor → evaluasi ambang milik pengguna → alert → tindakan lapangan; kegiatan dan panen dikaitkan ke lokasi, emisi dihitung dari faktor yang dicatat."
+  },
+  "clinic-os": {
+    "accent": "#72a8d4",
+    "currency": "IDR",
+    "tagline": "A clearer day for your clinic.",
+    "modules": [
+      {
+        "key": "patients",
+        "label": "Pasien",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "code",
+            "label": "Kode pasien",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "birth_date",
+            "label": "Tanggal lahir",
+            "type": "date"
+          },
+          {
+            "key": "phone",
+            "label": "Nomor telepon",
+            "type": "text"
+          },
+          {
+            "key": "address",
+            "label": "Alamat",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "staff",
+        "label": "Staf",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "email",
+            "label": "Email",
+            "type": "email"
+          },
+          {
+            "key": "role",
+            "label": "Jabatan",
+            "type": "text"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "rooms",
+        "label": "Ruangan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "appointments",
+        "label": "Janji temu",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "patient_id",
+            "label": "Pasien",
+            "type": "ref",
+            "ref": "patients",
+            "required": true
+          },
+          {
+            "key": "staff_id",
+            "label": "Staf",
+            "type": "ref",
+            "ref": "staff",
+            "required": true
+          },
+          {
+            "key": "room_id",
+            "label": "Ruangan",
+            "type": "ref",
+            "ref": "rooms",
+            "required": false
+          },
+          {
+            "key": "start",
+            "label": "Mulai",
+            "type": "datetime",
+            "required": true
+          },
+          {
+            "key": "end",
+            "label": "Selesai",
+            "type": "datetime",
+            "required": true
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "scheduled",
+          "checked_in",
+          "done",
+          "cancelled"
+        ],
+        "actions": [
+          "appointment-encounter"
+        ]
+      },
+      {
+        "key": "encounters",
+        "label": "Kunjungan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "patient_id",
+            "label": "Pasien",
+            "type": "ref",
+            "ref": "patients",
+            "required": true
+          },
+          {
+            "key": "appointment_id",
+            "label": "Janji temu",
+            "type": "ref",
+            "ref": "appointments",
+            "required": false
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "notes",
+            "label": "Catatan kunjungan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "open",
+          "closed"
+        ]
+      },
+      {
+        "key": "prescriptions",
+        "label": "Catatan resep",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "encounter_id",
+            "label": "Kunjungan",
+            "type": "ref",
+            "ref": "encounters",
+            "required": true
+          },
+          {
+            "key": "body",
+            "label": "Rincian resep dari tenaga klinis",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "supplies",
+        "label": "Persediaan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "stock",
+            "label": "Stok",
+            "type": "number",
+            "min": 0
+          },
+          {
+            "key": "unit",
+            "label": "Satuan",
+            "type": "text"
+          },
+          {
+            "key": "expiry",
+            "label": "Kadaluarsa",
+            "type": "date"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "invoices",
+        "label": "Tagihan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "patient_id",
+            "label": "Pasien",
+            "type": "ref",
+            "ref": "patients",
+            "required": true
+          },
+          {
+            "key": "encounter_id",
+            "label": "Kunjungan",
+            "type": "ref",
+            "ref": "encounters",
+            "required": false
+          },
+          {
+            "key": "amount",
+            "label": "Jumlah",
+            "type": "money"
+          },
+          {
+            "key": "due_date",
+            "label": "Jatuh tempo",
+            "type": "date"
+          }
+        ],
+        "statuses": [
+          "unpaid",
+          "paid",
+          "void"
+        ]
+      },
+      {
+        "key": "referrals",
+        "label": "Rujukan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "patient_id",
+            "label": "Pasien",
+            "type": "ref",
+            "ref": "patients",
+            "required": true
+          },
+          {
+            "key": "destination",
+            "label": "Tujuan",
+            "type": "text"
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "followups",
+        "label": "Tindak lanjut",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "patient_id",
+            "label": "Pasien",
+            "type": "ref",
+            "ref": "patients",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "planned",
+          "done"
+        ]
+      },
+      {
+        "key": "calendar",
+        "label": "Kalender klinik",
+        "tool": "calendar",
+        "fields": []
+      },
+      {
+        "key": "reports",
+        "label": "Laporan",
+        "tool": "reports",
+        "fields": [],
+        "statuses": []
+      }
+    ],
+    "id": "clinic-os",
+    "name": "ClinicOS",
+    "purpose": "Administrasi klinik dengan rekam kegiatan, jadwal, stok dan tagihan; akses data berdasarkan workspace.",
+    "sources": [
+      "clinic-os"
+    ],
+    "workflow": "Pasien → janji temu tanpa bentrok → kunjungan → catatan/resep → tagihan → tindak lanjut; pemisahan akses antar-workspace diuji."
+  },
+  "legalbot-garuda": {
+    "accent": "#c38d69",
+    "currency": "IDR",
+    "tagline": "Your matters, thoughtfully organized.",
+    "modules": [
+      {
+        "key": "clients",
+        "label": "Klien",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "email",
+            "label": "Email",
+            "type": "email"
+          },
+          {
+            "key": "phone",
+            "label": "Nomor telepon",
+            "type": "text"
+          },
+          {
+            "key": "address",
+            "label": "Alamat",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "matters",
+        "label": "Perkara",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "client_id",
+            "label": "Klien",
+            "type": "ref",
+            "ref": "clients",
+            "required": true
+          },
+          {
+            "key": "description",
+            "label": "Deskripsi",
+            "type": "textarea"
+          },
+          {
+            "key": "reference",
+            "label": "Nomor referensi",
+            "type": "text"
+          }
+        ],
+        "statuses": [
+          "open",
+          "in_progress",
+          "closed"
+        ]
+      },
+      {
+        "key": "documents",
+        "label": "Dokumen",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "matter_id",
+            "label": "Perkara",
+            "type": "ref",
+            "ref": "matters",
+            "required": true
+          },
+          {
+            "key": "body",
+            "label": "Isi dokumen",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "key": "version_label",
+            "label": "Label versi",
+            "type": "text"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "deadlines",
+        "label": "Tenggat",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "matter_id",
+            "label": "Perkara",
+            "type": "ref",
+            "ref": "matters",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "pending",
+          "done"
+        ]
+      },
+      {
+        "key": "tasks",
+        "label": "Pekerjaan",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "matter_id",
+            "label": "Perkara",
+            "type": "ref",
+            "ref": "matters",
+            "required": false
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "todo",
+          "doing",
+          "done"
+        ]
+      },
+      {
+        "key": "time_entries",
+        "label": "Catatan waktu",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "matter_id",
+            "label": "Perkara",
+            "type": "ref",
+            "ref": "matters",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "minutes",
+            "label": "Menit",
+            "type": "number",
+            "min": 1
+          },
+          {
+            "key": "rate",
+            "label": "Tarif per jam",
+            "type": "money"
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "invoices",
+        "label": "Invoice",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "client_id",
+            "label": "Klien",
+            "type": "ref",
+            "ref": "clients",
+            "required": true
+          },
+          {
+            "key": "matter_id",
+            "label": "Perkara",
+            "type": "ref",
+            "ref": "matters",
+            "required": false
+          },
+          {
+            "key": "amount",
+            "label": "Jumlah",
+            "type": "money"
+          },
+          {
+            "key": "due_date",
+            "label": "Jatuh tempo",
+            "type": "date"
+          }
+        ],
+        "statuses": [
+          "unpaid",
+          "paid",
+          "void"
+        ]
+      },
+      {
+        "key": "clauses",
+        "label": "Klausul & template",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "body",
+            "label": "Isi klausul",
+            "type": "textarea",
+            "required": true
+          },
+          {
+            "key": "tags",
+            "label": "Tag",
+            "type": "text"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "references",
+        "label": "Referensi",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "url",
+            "label": "URL sumber",
+            "type": "url"
+          },
+          {
+            "key": "description",
+            "label": "Catatan sumber",
+            "type": "textarea"
+          },
+          {
+            "key": "checked_at",
+            "label": "Tanggal pemeriksaan",
+            "type": "date"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "assistant",
+        "label": "Asisten dokumen",
+        "tool": "ai",
+        "fields": []
+      },
+      {
+        "key": "reports",
+        "label": "Laporan",
+        "tool": "reports",
+        "fields": [],
+        "statuses": []
+      }
+    ],
+    "id": "legalbot-garuda",
+    "name": "Garuda Legal Workspace",
+    "purpose": "Manajemen perkara, dokumen, tenggat, waktu kerja dan referensi dalam satu workspace.",
+    "sources": [
+      "legalbot-garuda",
+      "lawbot",
+      "legalbotgaruda"
+    ],
+    "workflow": "Klien → perkara → dokumen & tenggat → pekerjaan/catatan waktu → invoice → arsip perkara; sumber referensi disimpan eksplisit."
+  },
+  "codeforgeme": {
+    "accent": "#b293ed",
+    "currency": "IDR",
+    "tagline": "A workspace for things worth building.",
+    "modules": [
+      {
+        "key": "projects",
+        "label": "Proyek",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "description",
+            "label": "Deskripsi",
+            "type": "textarea"
+          },
+          {
+            "key": "deadline",
+            "label": "Target selesai",
+            "type": "date"
+          }
+        ],
+        "statuses": [
+          "planning",
+          "active",
+          "review",
+          "done"
+        ]
+      },
+      {
+        "key": "files",
+        "label": "Berkas proyek",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": true
+          },
+          {
+            "key": "path",
+            "label": "Path relatif",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "language",
+            "label": "Bahasa",
+            "type": "select",
+            "options": [
+              "javascript",
+              "html",
+              "css",
+              "json",
+              "markdown",
+              "python",
+              "text"
+            ]
+          },
+          {
+            "key": "content",
+            "label": "Isi berkas",
+            "type": "code",
+            "required": true
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "tasks",
+        "label": "Task board",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": false
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "todo",
+          "doing",
+          "done"
+        ]
+      },
+      {
+        "key": "snippets",
+        "label": "Snippet",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "language",
+            "label": "Bahasa",
+            "type": "text"
+          },
+          {
+            "key": "content",
+            "label": "Kode",
+            "type": "code",
+            "required": true
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "tests",
+        "label": "Pengujian",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": true
+          },
+          {
+            "key": "content",
+            "label": "JavaScript assertions",
+            "type": "code",
+            "required": true
+          }
+        ],
+        "statuses": [
+          "draft",
+          "passed",
+          "failed"
+        ]
+      },
+      {
+        "key": "releases",
+        "label": "Catatan rilis",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": true
+          },
+          {
+            "key": "version_label",
+            "label": "Versi",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "body",
+            "label": "Changelog",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "environments",
+        "label": "Environment checklist",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": true
+          },
+          {
+            "key": "key",
+            "label": "Nama variabel",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "description",
+            "label": "Deskripsi",
+            "type": "textarea"
+          },
+          {
+            "key": "required",
+            "label": "Wajib",
+            "type": "select",
+            "options": [
+              "yes",
+              "no"
+            ]
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "notes",
+        "label": "Dokumentasi",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": false
+          },
+          {
+            "key": "body",
+            "label": "Isi",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "code-studio",
+        "label": "Editor & preview",
+        "tool": "code-studio",
+        "fields": []
+      },
+      {
+        "key": "dev-tools",
+        "label": "Developer tools",
+        "tool": "dev-tools",
+        "fields": []
+      },
+      {
+        "key": "assistant",
+        "label": "Asisten kode",
+        "tool": "ai",
+        "fields": []
+      },
+      {
+        "key": "reports",
+        "label": "Laporan",
+        "tool": "reports",
+        "fields": [],
+        "statuses": []
+      }
+    ],
+    "id": "codeforgeme",
+    "name": "CodeForge Workspace",
+    "purpose": "Workspace pengembangan proyek dengan berkas, pengujian browser, paket ekspor dan alat diagnosis.",
+    "sources": [
+      "codeforgeme"
+    ],
+    "workflow": "Buat proyek → tambah/edit berkas → preview terisolasi → jalankan pengujian → perbaiki → ekspor paket proyek dan catatan rilis."
+  },
+  "gridcraft": {
+    "accent": "#d7bd59",
+    "currency": "IDR",
+    "tagline": "Build worlds. Play your ideas.",
+    "modules": [
+      {
+        "key": "projects",
+        "label": "Proyek",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "description",
+            "label": "Deskripsi",
+            "type": "textarea"
+          },
+          {
+            "key": "deadline",
+            "label": "Target selesai",
+            "type": "date"
+          }
+        ],
+        "statuses": [
+          "planning",
+          "active",
+          "review",
+          "done"
+        ]
+      },
+      {
+        "key": "levels",
+        "label": "Level",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": true
+          },
+          {
+            "key": "width",
+            "label": "Lebar tile",
+            "type": "number",
+            "min": 4,
+            "max": 64
+          },
+          {
+            "key": "height",
+            "label": "Tinggi tile",
+            "type": "number",
+            "min": 4,
+            "max": 64
+          },
+          {
+            "key": "cells",
+            "label": "Data tile",
+            "type": "json"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "entities",
+        "label": "Entity",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "level_id",
+            "label": "Level",
+            "type": "ref",
+            "ref": "levels",
+            "required": true
+          },
+          {
+            "key": "type",
+            "label": "Jenis",
+            "type": "select",
+            "options": [
+              "player",
+              "obstacle",
+              "collectible",
+              "goal"
+            ]
+          },
+          {
+            "key": "x",
+            "label": "X tile",
+            "type": "number",
+            "min": 0,
+            "max": 63
+          },
+          {
+            "key": "y",
+            "label": "Y tile",
+            "type": "number",
+            "min": 0,
+            "max": 63
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "assets",
+        "label": "Asset library",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": true
+          },
+          {
+            "key": "description",
+            "label": "Deskripsi",
+            "type": "textarea"
+          },
+          {
+            "key": "color",
+            "label": "Warna",
+            "type": "color"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "shaders",
+        "label": "Shader",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": true
+          },
+          {
+            "key": "content",
+            "label": "GLSL fragment shader",
+            "type": "code",
+            "required": true
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "versions",
+        "label": "Versi proyek",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "project_id",
+            "label": "Proyek",
+            "type": "ref",
+            "ref": "projects",
+            "required": true
+          },
+          {
+            "key": "content",
+            "label": "Snapshot JSON",
+            "type": "json"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "level-editor",
+        "label": "Level editor & playtest",
+        "tool": "grid-editor",
+        "fields": []
+      },
+      {
+        "key": "shader-editor",
+        "label": "Shader editor",
+        "tool": "shader-editor",
+        "fields": []
+      },
+      {
+        "key": "reports",
+        "label": "Laporan",
+        "tool": "reports",
+        "fields": [],
+        "statuses": []
+      }
+    ],
+    "id": "gridcraft",
+    "name": "GridCraft Engine",
+    "purpose": "Editor game 2D dengan level, tile, entity, shader dan playtest di dalam proyek yang sama.",
+    "sources": [
+      "gridcraft",
+      "shaderforge"
+    ],
+    "workflow": "Proyek → gambar level → atur entity/layer → shader → playtest dengan collision → simpan versi → ekspor JSON/PNG."
+  },
+  "stockgenie": {
+    "accent": "#6ccab0",
+    "currency": "USD",
+    "tagline": "A portfolio you can understand.",
+    "modules": [
+      {
+        "key": "watchlist",
+        "label": "Watchlist",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "symbol",
+            "label": "Aset",
+            "type": "select",
+            "options": [
+              "BTC",
+              "ETH",
+              "SOL"
+            ]
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "holdings",
+        "label": "Kepemilikan awal",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "symbol",
+            "label": "Aset",
+            "type": "select",
+            "options": [
+              "BTC",
+              "ETH",
+              "SOL"
+            ]
+          },
+          {
+            "key": "quantity",
+            "label": "Unit",
+            "type": "number",
+            "min": 0
+          },
+          {
+            "key": "cost",
+            "label": "Modal total USD",
+            "type": "money"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "transactions",
+        "label": "Transaksi",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "symbol",
+            "label": "Aset",
+            "type": "select",
+            "options": [
+              "BTC",
+              "ETH",
+              "SOL"
+            ]
+          },
+          {
+            "key": "type",
+            "label": "Jenis",
+            "type": "select",
+            "options": [
+              "buy",
+              "sell"
+            ]
+          },
+          {
+            "key": "quantity",
+            "label": "Unit",
+            "type": "number",
+            "required": true,
+            "min": 1e-08
+          },
+          {
+            "key": "price",
+            "label": "Harga per unit USD",
+            "type": "money",
+            "required": true
+          },
+          {
+            "key": "fee",
+            "label": "Biaya USD",
+            "type": "money"
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "notes",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "price_alerts",
+        "label": "Alert harga",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "symbol",
+            "label": "Aset",
+            "type": "select",
+            "options": [
+              "BTC",
+              "ETH",
+              "SOL"
+            ]
+          },
+          {
+            "key": "direction",
+            "label": "Kondisi",
+            "type": "select",
+            "options": [
+              "above",
+              "below"
+            ]
+          },
+          {
+            "key": "price",
+            "label": "Harga USD",
+            "type": "money",
+            "required": true
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "notes",
+        "label": "Jurnal",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "body",
+            "label": "Catatan keputusan",
+            "type": "textarea",
+            "required": true
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "research",
+        "label": "Riset",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "symbol",
+            "label": "Aset",
+            "type": "select",
+            "options": [
+              "BTC",
+              "ETH",
+              "SOL"
+            ]
+          },
+          {
+            "key": "url",
+            "label": "Sumber",
+            "type": "url"
+          },
+          {
+            "key": "body",
+            "label": "Catatan",
+            "type": "textarea"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "snapshots",
+        "label": "Snapshot portofolio",
+        "fields": [
+          {
+            "key": "name",
+            "label": "Nama / judul",
+            "type": "text",
+            "required": true
+          },
+          {
+            "key": "date",
+            "label": "Tanggal",
+            "type": "date",
+            "required": true
+          },
+          {
+            "key": "content",
+            "label": "Nilai dan kepemilikan",
+            "type": "json"
+          }
+        ],
+        "statuses": [
+          "active",
+          "archived"
+        ]
+      },
+      {
+        "key": "market",
+        "label": "Pasar & portofolio",
+        "tool": "market",
+        "fields": []
+      },
+      {
+        "key": "reports",
+        "label": "Laporan",
+        "tool": "reports",
+        "fields": [],
+        "statuses": []
+      }
+    ],
+    "id": "stockgenie",
+    "name": "StockGenie Portfolio",
+    "purpose": "Workspace pemantauan pasar, portofolio dan jurnal keputusan dengan harga publik nyata.",
+    "sources": [
+      "stockgenie"
+    ],
+    "workflow": "Tambah aset → catat transaksi/biaya → feed harga aktual → hitung kepemilikan dan P/L → alert + jurnal → snapshot dan ekspor; aplikasi tidak mengeksekusi perdagangan."
+  }
+}

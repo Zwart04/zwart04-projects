@@ -1,0 +1,11 @@
+{
+ "name":"zwart04-platform-v2",
+ "account_id":"06403b9ad7c7c150d97e34aad884419d",
+ "main":"worker.js",
+ "compatibility_date":"2026-10-03",
+ "workers_dev":false,
+ "d1_databases":[{"binding":"DB","database_name":"zwart04-unified-v2","database_id":"d48363f0-b33e-4cc6-80f1-8c197982f76e"}],
+ "ai":{"binding":"AI"},
+ "triggers":{"crons":["17 19 * * *"]},
+ "observability":{"enabled":true}
+}

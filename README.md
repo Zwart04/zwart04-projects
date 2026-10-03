@@ -1,14 +1,17 @@
-# Zwart04 Project Library
+# Zwart04 Workspaces
 
-[Open catalog](https://projects-app.zwart.qzz.io) · [Rebuild report](REPORT.md)
+Eleven real applications, one private backend, and one recovery archive. This repository is the product directory and shared backend infrastructure. Each application has its own canonical repository, responsive UI, real login/workspace records and native tools.
 
-Searchable catalog of 34 maintained projects and 44 hosted applications. Categories, project descriptions, companion app links and source repositories are loaded from `public/projects.json`.
+**Directory:** https://projects-app.zwart.qzz.io/
+
+See [REBUILD-PLAN.md](REBUILD-PLAN.md), [docs/BACKEND.md](docs/BACKEND.md), and [VERIFICATION.json](VERIFICATION.json).
 
 ```sh
-npm run typecheck
+npm ci
+npm test
 npm run build
-npx wrangler login
-npx wrangler deploy
 ```
 
-No dependency installation is required for the build. Cloudflare free-plan limits apply. The backup release contains only previously public, in-scope Zwart04 repository history.
+Private repositories and agenmini, zwartos, ZwartGuard, rakaat-counter are excluded. Only public repositories owned by Zwart04 are covered. daily-apps was included after explicit owner authorization.
+
+Previous Git history is preserved in the single [unified-rebuild-backup release](https://github.com/Zwart04/zwart04-projects/releases/tag/unified-rebuild-backup). Workspace user data is never copied into that public archive.

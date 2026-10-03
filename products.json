@@ -1,0 +1,267 @@
+{
+  "daily-apps": {
+    "name": "DailyOS",
+    "purpose": "Satu workspace pribadi untuk perencanaan, kebiasaan, dokumen dan alat kerja sehari-hari.",
+    "sources": [
+      "daily-apps",
+      "habitflow",
+      "habitgrid",
+      "routineflow",
+      "hearth-os",
+      "tripforge"
+    ],
+    "modules": [
+      "Hari ini & kalender",
+      "Kebiasaan & check-in",
+      "Rutinitas bertahap",
+      "Tugas & target",
+      "Catatan & anggaran",
+      "Rencana perjalanan",
+      "Surat terjadwal",
+      "Form builder",
+      "Editor HTML",
+      "Tema dari gambar",
+      "Pembersihan data",
+      "12 utilitas developer",
+      "Kata Kilat",
+      "Kurs live",
+      "CLI terpadu"
+    ],
+    "workflow": "Daftar → simpan kode pemulihan → buat workspace → rencanakan hari → check-in/tugas → laporan progres. Dokumen dan hasil tool dapat disimpan sebagai bagian workspace."
+  },
+  "daganghub": {
+    "name": "DagangHub",
+    "purpose": "Sistem operasional usaha dari produk dan pelanggan sampai pesanan, stok, invoice, pemasaran dan pengiriman.",
+    "sources": [
+      "daganghub",
+      "rosari-commerce",
+      "warungrosari",
+      "waconvert",
+      "wahagenius-crm",
+      "ledger",
+      "ledgerflow",
+      "invensight",
+      "priceforge",
+      "menumaster",
+      "motopart",
+      "attribution-hub",
+      "resi-flow"
+    ],
+    "modules": [
+      "Produk & varian",
+      "Pelanggan & CRM",
+      "Pemasok",
+      "Pesanan",
+      "Stok & mutasi",
+      "Invoice & pembayaran",
+      "Pengeluaran",
+      "Harga & margin",
+      "Menu & bundel",
+      "Kampanye & ROAS",
+      "Pengiriman",
+      "Laporan & audit"
+    ],
+    "workflow": "Produk + pelanggan → pesanan draft → konfirmasi dengan pemeriksaan stok atomik → invoice → pembayaran → pengiriman → laporan; pembatalan mengembalikan stok tepat sekali."
+  },
+  "renderforge": {
+    "name": "RenderForge Studio",
+    "purpose": "Studio kreatif dengan satu proyek, asset library, timeline, audio dan paket publikasi.",
+    "sources": [
+      "renderforge",
+      "mediaforge",
+      "clipforge",
+      "clipforge-ai",
+      "neurotone",
+      "audiomind-studio",
+      "socsynth-studio",
+      "socsynth-studio-new",
+      "zwart-2026-08-31-socsynth-studio",
+      "podforge",
+      "voiceforge-studio",
+      "moodcanvas"
+    ],
+    "modules": [
+      "Proyek",
+      "Asset library",
+      "Storyboard",
+      "Timeline video",
+      "Editor audio WAV",
+      "Sintesis suara",
+      "Moodboard & kanvas",
+      "Naskah podcast",
+      "Rencana publikasi",
+      "Template & export"
+    ],
+    "workflow": "Buat proyek → impor aset → susun storyboard/timeline → edit audio atau visual → preview → ekspor media dan simpan catatan versi di proyek yang sama."
+  },
+  "tutormind": {
+    "name": "TutorMind Academy",
+    "purpose": "Platform belajar dan pembuatan kursus dengan materi, latihan, penilaian dan progres nyata.",
+    "sources": [
+      "tutormind",
+      "courseforge",
+      "inventa"
+    ],
+    "modules": [
+      "Kursus",
+      "Modul & materi",
+      "Pendaftaran belajar",
+      "Sesi belajar",
+      "Flashcard",
+      "Kuis & penilaian",
+      "Tugas",
+      "Catatan belajar",
+      "Progres",
+      "Tutor AI"
+    ],
+    "workflow": "Buat kursus → materi → belajar → latihan flashcard/kuis → kirim jawaban → penilaian dari kunci jawaban → progres; bantuan AI dipanggil dari backend."
+  },
+  "servora": {
+    "name": "Servora Operations",
+    "purpose": "Operasi layanan dengan pemesanan, teknisi, pekerjaan lapangan dan kendaraan dalam satu jadwal.",
+    "sources": [
+      "servora",
+      "bookflow",
+      "fieldroute-os",
+      "fleetmile"
+    ],
+    "modules": [
+      "Pelanggan",
+      "Layanan",
+      "Booking",
+      "Pekerjaan",
+      "Teknisi",
+      "Kendaraan",
+      "Rute & jarak",
+      "Checklist",
+      "Biaya",
+      "Jadwal & laporan"
+    ],
+    "workflow": "Pelanggan → booking tanpa bentrok → pekerjaan + teknisi/kendaraan → checklist lapangan → selesai → biaya/jarak dan laporan operasional."
+  },
+  "aquapure": {
+    "name": "AquaPure Field Intelligence",
+    "purpose": "Workspace lapangan untuk pengukuran air, pertanian, input, hasil panen dan catatan emisi.",
+    "sources": [
+      "aquapure",
+      "farmlog",
+      "carbontrack"
+    ],
+    "modules": [
+      "Lokasi",
+      "Sensor",
+      "Sampel air",
+      "Ambang & alert",
+      "Tanaman",
+      "Kegiatan lapangan",
+      "Input pertanian",
+      "Panen",
+      "Aktivitas emisi",
+      "Laporan & ingestion API"
+    ],
+    "workflow": "Lokasi → pengukuran manual atau API sensor → evaluasi ambang milik pengguna → alert → tindakan lapangan; kegiatan dan panen dikaitkan ke lokasi, emisi dihitung dari faktor yang dicatat."
+  },
+  "clinic-os": {
+    "name": "ClinicOS",
+    "purpose": "Administrasi klinik dengan rekam kegiatan, jadwal, stok dan tagihan; akses data berdasarkan workspace.",
+    "sources": [
+      "clinic-os"
+    ],
+    "modules": [
+      "Pasien",
+      "Janji temu",
+      "Kunjungan",
+      "Catatan & resep",
+      "Staf",
+      "Ruangan",
+      "Persediaan",
+      "Tagihan",
+      "Rujukan",
+      "Tindak lanjut"
+    ],
+    "workflow": "Pasien → janji temu tanpa bentrok → kunjungan → catatan/resep → tagihan → tindak lanjut; pemisahan akses antar-workspace diuji."
+  },
+  "legalbot-garuda": {
+    "name": "Garuda Legal Workspace",
+    "purpose": "Manajemen perkara, dokumen, tenggat, waktu kerja dan referensi dalam satu workspace.",
+    "sources": [
+      "legalbot-garuda",
+      "lawbot",
+      "legalbotgaruda"
+    ],
+    "modules": [
+      "Klien",
+      "Perkara",
+      "Dokumen",
+      "Tenggat",
+      "Tugas",
+      "Catatan waktu",
+      "Invoice",
+      "Klausul & template",
+      "Referensi",
+      "Asisten AI"
+    ],
+    "workflow": "Klien → perkara → dokumen & tenggat → pekerjaan/catatan waktu → invoice → arsip perkara; sumber referensi disimpan eksplisit."
+  },
+  "codeforgeme": {
+    "name": "CodeForge Workspace",
+    "purpose": "Workspace pengembangan proyek dengan berkas, pengujian browser, paket ekspor dan alat diagnosis.",
+    "sources": [
+      "codeforgeme"
+    ],
+    "modules": [
+      "Proyek",
+      "Editor berkas",
+      "Task board",
+      "Snippet",
+      "Preview tersandbox",
+      "Pengujian JavaScript",
+      "Rilis ZIP",
+      "Environment checklist",
+      "Dokumentasi",
+      "Asisten kode AI"
+    ],
+    "workflow": "Buat proyek → tambah/edit berkas → preview terisolasi → jalankan pengujian → perbaiki → ekspor paket proyek dan catatan rilis."
+  },
+  "gridcraft": {
+    "name": "GridCraft Engine",
+    "purpose": "Editor game 2D dengan level, tile, entity, shader dan playtest di dalam proyek yang sama.",
+    "sources": [
+      "gridcraft",
+      "shaderforge"
+    ],
+    "modules": [
+      "Proyek",
+      "Editor level",
+      "Layer & tile",
+      "Entity",
+      "Asset library",
+      "Shader GLSL",
+      "Playtest",
+      "Undo/redo",
+      "Export JSON/PNG",
+      "Versi proyek"
+    ],
+    "workflow": "Proyek → gambar level → atur entity/layer → shader → playtest dengan collision → simpan versi → ekspor JSON/PNG."
+  },
+  "stockgenie": {
+    "name": "StockGenie Portfolio",
+    "purpose": "Workspace pemantauan pasar, portofolio dan jurnal keputusan dengan harga publik nyata.",
+    "sources": [
+      "stockgenie"
+    ],
+    "modules": [
+      "Watchlist",
+      "Harga live",
+      "Kepemilikan",
+      "Transaksi",
+      "Valuasi & P/L",
+      "Alert harga",
+      "Jurnal",
+      "Riset",
+      "Snapshot",
+      "Export laporan"
+    ],
+    "workflow": "Tambah aset → catat transaksi/biaya → feed harga aktual → hitung kepemilikan dan P/L → alert + jurnal → snapshot dan ekspor; aplikasi tidak mengeksekusi perdagangan."
+  }
+}
