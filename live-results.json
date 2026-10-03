@@ -1,0 +1,398 @@
+[
+  {
+    "name": "aquapure",
+    "url": "https://aquapure-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "AquaPure \u00e2\u20ac\u201d Real-time Water Quality OS",
+    "broken_assets": [],
+    "bytes": 35076,
+    "error": ""
+  },
+  {
+    "name": "attribution-hub",
+    "url": "https://attribution-hub-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "Attribution Hub",
+    "broken_assets": [],
+    "bytes": 10909,
+    "error": ""
+  },
+  {
+    "name": "audiomind-studio",
+    "url": "https://audiomind-studio-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "AudioMind \u00b7 Local Audio Editor",
+    "broken_assets": [],
+    "bytes": 1845,
+    "error": ""
+  },
+  {
+    "name": "bookflow",
+    "url": "https://bookflow-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "BookFlow - Smart Scheduling &amp; Booking",
+    "broken_assets": [],
+    "bytes": 6895,
+    "error": ""
+  },
+  {
+    "name": "carbontrack",
+    "url": "https://carbontrack-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "CarbonTrack \u00e2\u20ac\u201d AI Carbon Footprint OS",
+    "broken_assets": [],
+    "bytes": 19388,
+    "error": ""
+  },
+  {
+    "name": "clinic-os",
+    "url": "https://clinic-os-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "ClinicOS - Sistem Operasi Klinik &amp; Apotek",
+    "broken_assets": [],
+    "bytes": 13364,
+    "error": ""
+  },
+  {
+    "name": "clipforge",
+    "url": "https://clipforge-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "ClipForge AI \u00e2\u20ac\u201d AI Video Clipping for Social Media",
+    "broken_assets": [],
+    "bytes": 22995,
+    "error": ""
+  },
+  {
+    "name": "clipforge-ai",
+    "url": "https://clipforge-ai-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "ClipForge AI \u00e2\u20ac\u201d Browser-native highlight reel studio",
+    "broken_assets": [],
+    "bytes": 22912,
+    "error": ""
+  },
+  {
+    "name": "codeforgeme",
+    "url": "https://codeforgeme-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "CodeForge Me \u2014 Collaborative Code Playground",
+    "broken_assets": [],
+    "bytes": 7203,
+    "error": ""
+  },
+  {
+    "name": "courseforge",
+    "url": "https://courseforge-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "CourseForge",
+    "broken_assets": [],
+    "bytes": 14056,
+    "error": ""
+  },
+  {
+    "name": "daganghub",
+    "url": "https://daganghub-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "DagangHub",
+    "broken_assets": [],
+    "bytes": 7384,
+    "error": ""
+  },
+  {
+    "name": "farmlog",
+    "url": "https://farmlog-app.zwart.qzz.io/",
+    "http": "000",
+    "title": null,
+    "broken_assets": [],
+    "bytes": 4,
+    "error": "curl: (6) Could not resolve host: farmlog-app.zwart.qzz.io\r\n"
+  },
+  {
+    "name": "fieldroute-os",
+    "url": "https://fieldroute-os-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "FieldRoute OS",
+    "broken_assets": [],
+    "bytes": 11479,
+    "error": ""
+  },
+  {
+    "name": "fleetmile",
+    "url": "https://fleetmile-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "FleetMile - Fleet &amp; Vehicle Management OS",
+    "broken_assets": [],
+    "bytes": 6579,
+    "error": ""
+  },
+  {
+    "name": "gridcraft",
+    "url": "https://gridcraft-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "GridCraft \u2014 Collaborative Grid Game Editor",
+    "broken_assets": [],
+    "bytes": 22274,
+    "error": ""
+  },
+  {
+    "name": "habitflow",
+    "url": "https://habitflow-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "HabitFlow \u2014 Habit &amp; Goals Tracker",
+    "broken_assets": [],
+    "bytes": 7065,
+    "error": ""
+  },
+  {
+    "name": "habitgrid",
+    "url": "https://habitgrid-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "HabitGrid \u2014 Heatmap Streak Tracker",
+    "broken_assets": [],
+    "bytes": 6336,
+    "error": ""
+  },
+  {
+    "name": "hearth-os",
+    "url": "https://hearth-os-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "HearthOS - Home Operations OS",
+    "broken_assets": [],
+    "bytes": 7142,
+    "error": ""
+  },
+  {
+    "name": "invensight",
+    "url": "https://invensight-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "InvenSight - Inventory &amp; Stock Visibility OS",
+    "broken_assets": [],
+    "bytes": 13888,
+    "error": ""
+  },
+  {
+    "name": "lawbot",
+    "url": "https://lawbot-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "LawBot - AI Legal Q&amp;A untuk UMKM Indonesia",
+    "broken_assets": [],
+    "bytes": 9052,
+    "error": ""
+  },
+  {
+    "name": "ledger",
+    "url": "https://ledger-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "Ledger \u2014 Invoice &amp; Finance OS",
+    "broken_assets": [],
+    "bytes": 18903,
+    "error": ""
+  },
+  {
+    "name": "ledgerflow",
+    "url": "https://ledgerflow-app.zwart.qzz.io/",
+    "http": "000",
+    "title": null,
+    "broken_assets": [],
+    "bytes": 4,
+    "error": "curl: (6) Could not resolve host: ledgerflow-app.zwart.qzz.io\r\n"
+  },
+  {
+    "name": "legalbot-garuda",
+    "url": "https://legalbot-garuda-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "LegalBot Garuda \u2014 AI Hukum Indonesia",
+    "broken_assets": [],
+    "bytes": 5869,
+    "error": ""
+  },
+  {
+    "name": "menumaster",
+    "url": "https://menumaster-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "MenuMaster \u2014 Restaurant Kitchen OS",
+    "broken_assets": [],
+    "bytes": 12940,
+    "error": ""
+  },
+  {
+    "name": "moodcanvas",
+    "url": "https://moodcanvas-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "MoodCanvas AI - Draw how you feel",
+    "broken_assets": [],
+    "bytes": 8208,
+    "error": ""
+  },
+  {
+    "name": "motopart",
+    "url": "https://motopart-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "MotoPart - Motorcycle Workshop OS",
+    "broken_assets": [],
+    "bytes": 20970,
+    "error": ""
+  },
+  {
+    "name": "neurotone",
+    "url": "https://neurotone-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "NeuroTone Studio \u2014 Browser-native audio studio",
+    "broken_assets": [],
+    "bytes": 41578,
+    "error": ""
+  },
+  {
+    "name": "podforge",
+    "url": "https://podforge-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "PodForge \u2014 Podcast Publishing OS",
+    "broken_assets": [],
+    "bytes": 7966,
+    "error": ""
+  },
+  {
+    "name": "priceforge",
+    "url": "https://priceforge-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "PriceForge - Pricing Strategy Simulator",
+    "broken_assets": [],
+    "bytes": 20886,
+    "error": ""
+  },
+  {
+    "name": "renderforge",
+    "url": "https://renderforge-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "RenderForge | GPU Compute Shader Playground",
+    "broken_assets": [],
+    "bytes": 6790,
+    "error": ""
+  },
+  {
+    "name": "resi-flow",
+    "url": "https://resi-flow-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "ResiFlow - UMKM Logistics &amp; Shipment OS",
+    "broken_assets": [],
+    "bytes": 7286,
+    "error": ""
+  },
+  {
+    "name": "rosari-commerce",
+    "url": "https://rosari-commerce-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "Rosari Commerce",
+    "broken_assets": [],
+    "bytes": 9620,
+    "error": ""
+  },
+  {
+    "name": "routineflow",
+    "url": "https://routineflow-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "RoutineFlow \u2014 AI-Powered Daily Routine Orchestrator",
+    "broken_assets": [],
+    "bytes": 6971,
+    "error": ""
+  },
+  {
+    "name": "servora",
+    "url": "https://servora-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "Servora \u2014 Local Services Marketplace OS",
+    "broken_assets": [],
+    "bytes": 6485,
+    "error": ""
+  },
+  {
+    "name": "shaderforge",
+    "url": "https://shaderforge-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "ShaderForge \u00b7 GLSL Playground",
+    "broken_assets": [],
+    "bytes": 1438,
+    "error": ""
+  },
+  {
+    "name": "socsynth-studio",
+    "url": "https://socsynth-studio-app.zwart.qzz.io/",
+    "http": "200",
+    "title": null,
+    "broken_assets": [],
+    "bytes": 4274,
+    "error": ""
+  },
+  {
+    "name": "socsynth-studio-new",
+    "url": "https://socsynth-studio-new-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "SocSynth Studio - Caption &amp; Hashtag Generator Indonesia",
+    "broken_assets": [],
+    "bytes": 15844,
+    "error": ""
+  },
+  {
+    "name": "stockgenie",
+    "url": "https://stockgenie-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "StockGenie \u00b7 Crypto Watchlist",
+    "broken_assets": [],
+    "bytes": 1784,
+    "error": ""
+  },
+  {
+    "name": "tripforge",
+    "url": "https://tripforge-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "TripForge \u2014 Travel Itinerary OS",
+    "broken_assets": [],
+    "bytes": 7232,
+    "error": ""
+  },
+  {
+    "name": "tutormind",
+    "url": "https://tutormind-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "TutorMind - Adaptive Tutoring OS",
+    "broken_assets": [],
+    "bytes": 6854,
+    "error": ""
+  },
+  {
+    "name": "voiceforge-studio",
+    "url": "https://voiceforge-studio-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "VoiceForge Studio",
+    "broken_assets": [],
+    "bytes": 7950,
+    "error": ""
+  },
+  {
+    "name": "waconvert",
+    "url": "https://waconvert-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "WAConvert \u2014 WA CRM + Ads Attribution",
+    "broken_assets": [],
+    "bytes": 8337,
+    "error": ""
+  },
+  {
+    "name": "wahagenius-crm",
+    "url": "https://wahagenius-crm-app.zwart.qzz.io/",
+    "http": "200",
+    "title": null,
+    "broken_assets": [],
+    "bytes": 1782,
+    "error": ""
+  },
+  {
+    "name": "warungrosari",
+    "url": "https://warungrosari-app.zwart.qzz.io/",
+    "http": "200",
+    "title": "Warung Rosari \u2014 Commerce OS",
+    "broken_assets": [],
+    "bytes": 9613,
+    "error": ""
+  }
+]

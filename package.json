@@ -1,0 +1,9 @@
+{
+  "name": "zwart04-projects",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "typecheck": "node --check public/app.js"
+  }
+}

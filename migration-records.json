@@ -1,0 +1,100 @@
+[
+  {
+    "source": "Zwart04/clipforge-ai",
+    "target": "Zwart04/clipforge",
+    "path": "apps/clipforge-ai",
+    "original_commit": "486d94423c2e73ccf45f158f574ea2e79c0a804b",
+    "bundle_sha256": "4940858f1a19d5d99f13288a039f660423a06ac067b9db6f23c746ab942d3da8"
+  },
+  {
+    "source": "Zwart04/socsynth-studio",
+    "target": "Zwart04/neurotone",
+    "path": "apps/socsynth-studio",
+    "original_commit": "0ded61c09bb59cc573a3ea319144ae71653fcfb9",
+    "bundle_sha256": "70314c213485f2de2c5ce06003c9029896be449b13b78596396683ffc292c440"
+  },
+  {
+    "source": "Zwart04/audiomind-studio",
+    "target": "Zwart04/neurotone",
+    "path": "apps/audiomind-studio",
+    "original_commit": null,
+    "bundle_sha256": null
+  },
+  {
+    "source": "Zwart04/mediaforge",
+    "target": "Zwart04/renderforge",
+    "path": null,
+    "original_commit": null,
+    "bundle_sha256": null
+  },
+  {
+    "source": "Zwart04/habitgrid",
+    "target": "Zwart04/habitflow",
+    "path": "apps/habitgrid",
+    "original_commit": "b1e9826d5e8cb08fba7b1e0ff5a6515f8483a8f9",
+    "bundle_sha256": "6cf5de9b318ea1853cab1dab817c7686d87a1870484529e60a37bf59accdb1bd"
+  },
+  {
+    "source": "Zwart04/routineflow",
+    "target": "Zwart04/habitflow",
+    "path": "apps/routineflow",
+    "original_commit": "05f140c3e9a846f71479519e83f46314a9998a2a",
+    "bundle_sha256": "8b87165b7999ed20e291e759085469f2dffc070b84cdf0e851c10d2eaf1605b3"
+  },
+  {
+    "source": "Zwart04/lawbot",
+    "target": "Zwart04/legalbot-garuda",
+    "path": "apps/lawbot",
+    "original_commit": "4489d60479ba1f1f8729ac197fee50b443b91167",
+    "bundle_sha256": "8f7fdd42a3ac92d5fe3cee94d2873186e5de64e247143cc7cff12e952caeada6"
+  },
+  {
+    "source": "Zwart04/legalbotgaruda",
+    "target": "Zwart04/legalbot-garuda",
+    "path": null,
+    "original_commit": "a0aec4034098682f590a8f2d3d5ab001aad46d18",
+    "bundle_sha256": "247899d8be3697b6cf9c5b9ce8d2aca69e7363540ba5bf04f6992799cb12ef06"
+  },
+  {
+    "source": "Zwart04/ledger",
+    "target": "Zwart04/ledgerflow",
+    "path": "apps/ledger",
+    "original_commit": "c62e39cd333b4dbe9f83d9a152cdbdc7560e47c7",
+    "bundle_sha256": "03e5b253017fba9a7492739ee1606fd161406140048a5a31123fe781fa274e5c"
+  },
+  {
+    "source": "Zwart04/rosari-commerce",
+    "target": "Zwart04/daganghub",
+    "path": "apps/rosari-commerce",
+    "original_commit": "fccd9dd12db72da21c21db89fc77b028907a699b",
+    "bundle_sha256": "2e347e0fecb02428105cf411f086c3e3c2353cb96025a81b75d2e0723cef97c4"
+  },
+  {
+    "source": "Zwart04/warungrosari",
+    "target": "Zwart04/daganghub",
+    "path": "apps/warungrosari",
+    "original_commit": "b9833e737d5a5d5d75b003beea17c700455cd568",
+    "bundle_sha256": "7494f8abc32a404f62d2d4281b0856f459d4240002a09e2ce2f093ec189d661d"
+  },
+  {
+    "source": "Zwart04/wahagenius-crm",
+    "target": "Zwart04/waconvert",
+    "path": "apps/wahagenius-crm",
+    "original_commit": "4446bdb79ab761d79cc25b156922abafec6d7f32",
+    "bundle_sha256": "4c4d0943dd16f57daf365eef1b99fa124c6358af636179bee901f136205b42b2"
+  },
+  {
+    "source": "Zwart04/inventa",
+    "target": "Zwart04/tutormind",
+    "path": null,
+    "original_commit": "7915702148d8ba7f3373fc221b8ef831f02e760a",
+    "bundle_sha256": "89ece15e6301a386d58d6109e1bbaf1e4bb413c70ef407878f1c5f2648fe64c4"
+  },
+  {
+    "source": "Zwart04/zwart-2026-08-31-socsynth-studio",
+    "target": "Zwart04/socsynth-studio-new",
+    "path": null,
+    "original_commit": "d5ba98daebf6dacfe3d6f9fe1c91b73d035a1ee6",
+    "bundle_sha256": "76c2b54a3833e27db2d7329085b458f3380ac35585ae06f15771e45cf5c848eb"
+  }
+]

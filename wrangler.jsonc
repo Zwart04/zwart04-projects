@@ -1,0 +1,16 @@
+{
+  "name": "zwart04-projects",
+  "account_id": "06403b9ad7c7c150d97e34aad884419d",
+  "compatibility_date": "2026-10-03",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    {
+      "pattern": "projects-app.zwart.qzz.io",
+      "custom_domain": true
+    }
+  ]
+}

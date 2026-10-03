@@ -1,0 +1,11 @@
+import { resolve, dirname } from 'node:path';
+import { mkdirSync, cpSync, rmSync, existsSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+const root = process.cwd();
+const out = resolve(root, 'out');
+if (dirname(out) !== root) throw new Error('Unsafe output directory');
+execFileSync(process.execPath, ['--check', 'public/app.js'], { stdio: 'inherit' });
+if (existsSync(out)) rmSync(out, { recursive: true });
+mkdirSync(out);
+cpSync('public', out, { recursive: true });
+console.log('Validated JavaScript and built static application in out/');
