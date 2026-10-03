@@ -57,9 +57,9 @@
     "name": "clipforge",
     "url": "https://clipforge-app.zwart.qzz.io/",
     "http": "200",
-    "title": "ClipForge AI \u00e2\u20ac\u201d AI Video Clipping for Social Media",
+    "title": "ClipForge AI \u2014 AI Video Clipping for Social Media",
     "broken_assets": [],
-    "bytes": 22995,
+    "bytes": 24958,
     "error": ""
   },
   {
@@ -95,17 +95,17 @@
     "http": "200",
     "title": "DagangHub",
     "broken_assets": [],
-    "bytes": 7384,
+    "bytes": 9844,
     "error": ""
   },
   {
     "name": "farmlog",
     "url": "https://farmlog-app.zwart.qzz.io/",
-    "http": "000",
-    "title": null,
+    "http": "200",
+    "title": "FarmLog - Smart Farming Logbook",
     "broken_assets": [],
-    "bytes": 4,
-    "error": "curl: (6) Could not resolve host: farmlog-app.zwart.qzz.io\r\n"
+    "bytes": 11015,
+    "error": ""
   },
   {
     "name": "fieldroute-os",
@@ -140,7 +140,7 @@
     "http": "200",
     "title": "HabitFlow \u2014 Habit &amp; Goals Tracker",
     "broken_assets": [],
-    "bytes": 7065,
+    "bytes": 9497,
     "error": ""
   },
   {
@@ -191,11 +191,11 @@
   {
     "name": "ledgerflow",
     "url": "https://ledgerflow-app.zwart.qzz.io/",
-    "http": "000",
-    "title": null,
+    "http": "200",
+    "title": "LedgerFlow \u2014 Finance OS",
     "broken_assets": [],
-    "bytes": 4,
-    "error": "curl: (6) Could not resolve host: ledgerflow-app.zwart.qzz.io\r\n"
+    "bytes": 23499,
+    "error": ""
   },
   {
     "name": "legalbot-garuda",
@@ -203,7 +203,7 @@
     "http": "200",
     "title": "LegalBot Garuda \u2014 AI Hukum Indonesia",
     "broken_assets": [],
-    "bytes": 5869,
+    "bytes": 7044,
     "error": ""
   },
   {
@@ -239,7 +239,7 @@
     "http": "200",
     "title": "NeuroTone Studio \u2014 Browser-native audio studio",
     "broken_assets": [],
-    "bytes": 41578,
+    "bytes": 44054,
     "error": ""
   },
   {
@@ -374,7 +374,7 @@
     "http": "200",
     "title": "WAConvert \u2014 WA CRM + Ads Attribution",
     "broken_assets": [],
-    "bytes": 8337,
+    "bytes": 10330,
     "error": ""
   },
   {

@@ -73,3 +73,16 @@ AI services, WhatsApp automation servers, real sensor feeds, payments, multi-use
 ## Recovery
 
 The release `before-rebuild` contains full Git bundles for all 44 previously nonempty in-scope repositories plus SHA256 checksums. Four repositories were empty before this rebuild. Restore a bundle with `git clone <name>.bundle <directory>`. Original repositories remain available. See migration-records.json for original commit hashes and checksums.
+
+## Verified completion
+
+- 34 maintained project repositories and one catalog repository are public and active under Zwart04.
+- All 14 consolidated source repositories are archived, with README links to the maintained project.
+- All 44 application homepages returned HTTPS 200. Up to two referenced JavaScript/CSS assets per homepage were sampled and returned 200.
+- All 35 active repositories passed GitHub Actions on the published source revision, including companion applications in suite build matrices.
+- The recovery ZIP contains 44 valid Git bundles. Its SHA256 matches GitHub's server-reported release asset digest.
+- Catalog search was checked in the browser; audio encoding was checked against RIFF/PCM header, stereo interleaving, trim length, normalization, silence and clipping expectations.
+
+Evidence: [repository audit](final-verification.json), [CI runs](ci-results.json), [live checks](live-results.json), [migration map](migration-records.json), [archive records](archive-results.json), [backup release](https://github.com/Zwart04/zwart04-projects/releases/tag/before-rebuild).
+
+The CI snapshot was taken before this final documentation commit. The catalog code is unchanged by the report update.

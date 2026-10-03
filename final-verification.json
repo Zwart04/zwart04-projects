@@ -1,0 +1,315 @@
+{
+  "scope": "Zwart04 public repositories only",
+  "maintained_projects": 34,
+  "catalog_repositories": 1,
+  "hosted_applications": 44,
+  "archived_sources": 14,
+  "ci_runs_passed": 35,
+  "protected_repositories": [
+    "agenmini",
+    "zwartos",
+    "ZwartGuard",
+    "daily-apps",
+    "rakaat-counter"
+  ],
+  "private_repositories": "excluded",
+  "backup_url": "https://github.com/Zwart04/zwart04-projects/releases/tag/before-rebuild",
+  "backup_sha256": "defc7414b3f839def85a822f658d83a70e6234115d56f5bf221903a0efacb635",
+  "backup_remote_digest_verified": true,
+  "repositories": [
+    {
+      "name": "aquapure",
+      "private": false,
+      "archived": false,
+      "homepage": "https://aquapure-app.zwart.qzz.io"
+    },
+    {
+      "name": "attribution-hub",
+      "private": false,
+      "archived": false,
+      "homepage": "https://attribution-hub-app.zwart.qzz.io"
+    },
+    {
+      "name": "bookflow",
+      "private": false,
+      "archived": false,
+      "homepage": "https://bookflow-app.zwart.qzz.io"
+    },
+    {
+      "name": "carbontrack",
+      "private": false,
+      "archived": false,
+      "homepage": "https://carbontrack-app.zwart.qzz.io"
+    },
+    {
+      "name": "clinic-os",
+      "private": false,
+      "archived": false,
+      "homepage": "https://clinic-os-app.zwart.qzz.io"
+    },
+    {
+      "name": "clipforge",
+      "private": false,
+      "archived": false,
+      "homepage": "https://clipforge-app.zwart.qzz.io"
+    },
+    {
+      "name": "codeforgeme",
+      "private": false,
+      "archived": false,
+      "homepage": "https://codeforgeme-app.zwart.qzz.io"
+    },
+    {
+      "name": "courseforge",
+      "private": false,
+      "archived": false,
+      "homepage": "https://courseforge-app.zwart.qzz.io"
+    },
+    {
+      "name": "daganghub",
+      "private": false,
+      "archived": false,
+      "homepage": "https://daganghub-app.zwart.qzz.io"
+    },
+    {
+      "name": "farmlog",
+      "private": false,
+      "archived": false,
+      "homepage": "https://farmlog-app.zwart.qzz.io"
+    },
+    {
+      "name": "fieldroute-os",
+      "private": false,
+      "archived": false,
+      "homepage": "https://fieldroute-os-app.zwart.qzz.io"
+    },
+    {
+      "name": "fleetmile",
+      "private": false,
+      "archived": false,
+      "homepage": "https://fleetmile-app.zwart.qzz.io"
+    },
+    {
+      "name": "gridcraft",
+      "private": false,
+      "archived": false,
+      "homepage": "https://gridcraft-app.zwart.qzz.io"
+    },
+    {
+      "name": "habitflow",
+      "private": false,
+      "archived": false,
+      "homepage": "https://habitflow-app.zwart.qzz.io"
+    },
+    {
+      "name": "hearth-os",
+      "private": false,
+      "archived": false,
+      "homepage": "https://hearth-os-app.zwart.qzz.io"
+    },
+    {
+      "name": "invensight",
+      "private": false,
+      "archived": false,
+      "homepage": "https://invensight-app.zwart.qzz.io"
+    },
+    {
+      "name": "ledgerflow",
+      "private": false,
+      "archived": false,
+      "homepage": "https://ledgerflow-app.zwart.qzz.io"
+    },
+    {
+      "name": "legalbot-garuda",
+      "private": false,
+      "archived": false,
+      "homepage": "https://legalbot-garuda-app.zwart.qzz.io"
+    },
+    {
+      "name": "menumaster",
+      "private": false,
+      "archived": false,
+      "homepage": "https://menumaster-app.zwart.qzz.io"
+    },
+    {
+      "name": "moodcanvas",
+      "private": false,
+      "archived": false,
+      "homepage": "https://moodcanvas-app.zwart.qzz.io"
+    },
+    {
+      "name": "motopart",
+      "private": false,
+      "archived": false,
+      "homepage": "https://motopart-app.zwart.qzz.io"
+    },
+    {
+      "name": "neurotone",
+      "private": false,
+      "archived": false,
+      "homepage": "https://neurotone-app.zwart.qzz.io"
+    },
+    {
+      "name": "podforge",
+      "private": false,
+      "archived": false,
+      "homepage": "https://podforge-app.zwart.qzz.io"
+    },
+    {
+      "name": "priceforge",
+      "private": false,
+      "archived": false,
+      "homepage": "https://priceforge-app.zwart.qzz.io"
+    },
+    {
+      "name": "renderforge",
+      "private": false,
+      "archived": false,
+      "homepage": "https://renderforge-app.zwart.qzz.io"
+    },
+    {
+      "name": "resi-flow",
+      "private": false,
+      "archived": false,
+      "homepage": "https://resi-flow-app.zwart.qzz.io"
+    },
+    {
+      "name": "servora",
+      "private": false,
+      "archived": false,
+      "homepage": "https://servora-app.zwart.qzz.io"
+    },
+    {
+      "name": "shaderforge",
+      "private": false,
+      "archived": false,
+      "homepage": "https://shaderforge-app.zwart.qzz.io"
+    },
+    {
+      "name": "socsynth-studio-new",
+      "private": false,
+      "archived": false,
+      "homepage": "https://socsynth-studio-new-app.zwart.qzz.io"
+    },
+    {
+      "name": "stockgenie",
+      "private": false,
+      "archived": false,
+      "homepage": "https://stockgenie-app.zwart.qzz.io"
+    },
+    {
+      "name": "tripforge",
+      "private": false,
+      "archived": false,
+      "homepage": "https://tripforge-app.zwart.qzz.io"
+    },
+    {
+      "name": "tutormind",
+      "private": false,
+      "archived": false,
+      "homepage": "https://tutormind-app.zwart.qzz.io"
+    },
+    {
+      "name": "voiceforge-studio",
+      "private": false,
+      "archived": false,
+      "homepage": "https://voiceforge-studio-app.zwart.qzz.io"
+    },
+    {
+      "name": "waconvert",
+      "private": false,
+      "archived": false,
+      "homepage": "https://waconvert-app.zwart.qzz.io"
+    },
+    {
+      "name": "zwart04-projects",
+      "private": false,
+      "archived": false,
+      "homepage": "https://projects-app.zwart.qzz.io"
+    },
+    {
+      "name": "clipforge-ai",
+      "private": false,
+      "archived": true,
+      "homepage": "https://clipforge-app.zwart.qzz.io"
+    },
+    {
+      "name": "socsynth-studio",
+      "private": false,
+      "archived": true,
+      "homepage": "https://neurotone-app.zwart.qzz.io"
+    },
+    {
+      "name": "audiomind-studio",
+      "private": false,
+      "archived": true,
+      "homepage": "https://neurotone-app.zwart.qzz.io"
+    },
+    {
+      "name": "mediaforge",
+      "private": false,
+      "archived": true,
+      "homepage": "https://renderforge-app.zwart.qzz.io"
+    },
+    {
+      "name": "habitgrid",
+      "private": false,
+      "archived": true,
+      "homepage": "https://habitflow-app.zwart.qzz.io"
+    },
+    {
+      "name": "routineflow",
+      "private": false,
+      "archived": true,
+      "homepage": "https://habitflow-app.zwart.qzz.io"
+    },
+    {
+      "name": "lawbot",
+      "private": false,
+      "archived": true,
+      "homepage": "https://legalbot-garuda-app.zwart.qzz.io"
+    },
+    {
+      "name": "legalbotgaruda",
+      "private": false,
+      "archived": true,
+      "homepage": "https://legalbot-garuda-app.zwart.qzz.io"
+    },
+    {
+      "name": "ledger",
+      "private": false,
+      "archived": true,
+      "homepage": "https://ledgerflow-app.zwart.qzz.io"
+    },
+    {
+      "name": "rosari-commerce",
+      "private": false,
+      "archived": true,
+      "homepage": "https://daganghub-app.zwart.qzz.io"
+    },
+    {
+      "name": "warungrosari",
+      "private": false,
+      "archived": true,
+      "homepage": "https://daganghub-app.zwart.qzz.io"
+    },
+    {
+      "name": "wahagenius-crm",
+      "private": false,
+      "archived": true,
+      "homepage": "https://waconvert-app.zwart.qzz.io"
+    },
+    {
+      "name": "inventa",
+      "private": false,
+      "archived": true,
+      "homepage": "https://tutormind-app.zwart.qzz.io"
+    },
+    {
+      "name": "zwart-2026-08-31-socsynth-studio",
+      "private": false,
+      "archived": true,
+      "homepage": "https://socsynth-studio-new-app.zwart.qzz.io"
+    }
+  ]
+}

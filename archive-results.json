@@ -1,0 +1,86 @@
+[
+  {
+    "name": "clipforge-ai",
+    "target": "clipforge",
+    "sha": "a0fc6530cf869f8eb1b9d9a55ee1f6801a264ca1",
+    "archived": true
+  },
+  {
+    "name": "socsynth-studio",
+    "target": "neurotone",
+    "sha": "c81db31cf5a3d3c8213c8d9c37bb28851e54d033",
+    "archived": true
+  },
+  {
+    "name": "audiomind-studio",
+    "target": "neurotone",
+    "sha": "ba707f29f6bfeda102e29743cfc9ebfcbb781ced",
+    "archived": true
+  },
+  {
+    "name": "mediaforge",
+    "target": "renderforge",
+    "sha": "86507f8f621795f851bda82643d934c6a76a5f11",
+    "archived": true
+  },
+  {
+    "name": "habitgrid",
+    "target": "habitflow",
+    "sha": "f8f31d132f68079256335d1fb7417b0656d23cbd",
+    "archived": true
+  },
+  {
+    "name": "routineflow",
+    "target": "habitflow",
+    "sha": "d1b29c92c3a1396a62fd28fd20055bb8c6b4248c",
+    "archived": true
+  },
+  {
+    "name": "lawbot",
+    "target": "legalbot-garuda",
+    "sha": "8c7177736b4e686244d046d6e41156d95e49a515",
+    "archived": true
+  },
+  {
+    "name": "legalbotgaruda",
+    "target": "legalbot-garuda",
+    "sha": "75b0d1ca9767d9e11809000e4c9f77ac2638ad13",
+    "archived": true
+  },
+  {
+    "name": "ledger",
+    "target": "ledgerflow",
+    "sha": "56c9d394a8be3fd0117453af268ac6a5f8638ce4",
+    "archived": true
+  },
+  {
+    "name": "rosari-commerce",
+    "target": "daganghub",
+    "sha": "2ca2b8fb234682c395ecd5e6f745f2dbaeeb91e4",
+    "archived": true
+  },
+  {
+    "name": "warungrosari",
+    "target": "daganghub",
+    "sha": "c8bff4209c502f2a07497c6c1fff66f36f88fd7b",
+    "archived": true
+  },
+  {
+    "name": "wahagenius-crm",
+    "target": "waconvert",
+    "sha": "f9755df76a907b9bb10a1fee72a0f4001de7de37",
+    "archived": true
+  },
+  {
+    "name": "inventa",
+    "target": "tutormind",
+    "sha": "d1c8e0ebbe3ddee4782e811cd0e3fecf655699d3",
+    "archived": true
+  },
+  {
+    "name": "zwart-2026-08-31-socsynth-studio",
+    "target": "socsynth-studio-new",
+    "sha": "3583984fa453ce766824e610b4d8b705e94d925c",
+    "archived": true
+  }
+]
