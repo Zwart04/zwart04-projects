@@ -1,0 +1,154 @@
+[
+  {
+    "hostname": "habitflow-app.zwart.qzz.io",
+    "service": "zwart04-daily-apps"
+  },
+  {
+    "hostname": "habitgrid-app.zwart.qzz.io",
+    "service": "zwart04-daily-apps"
+  },
+  {
+    "hostname": "routineflow-app.zwart.qzz.io",
+    "service": "zwart04-daily-apps"
+  },
+  {
+    "hostname": "hearth-os-app.zwart.qzz.io",
+    "service": "zwart04-daily-apps"
+  },
+  {
+    "hostname": "tripforge-app.zwart.qzz.io",
+    "service": "zwart04-daily-apps"
+  },
+  {
+    "hostname": "rosari-commerce-app.zwart.qzz.io",
+    "service": "zwart04-daganghub"
+  },
+  {
+    "hostname": "warungrosari-app.zwart.qzz.io",
+    "service": "zwart04-daganghub"
+  },
+  {
+    "hostname": "waconvert-app.zwart.qzz.io",
+    "service": "zwart04-daganghub"
+  },
+  {
+    "hostname": "wahagenius-crm-app.zwart.qzz.io",
+    "service": "zwart04-daganghub"
+  },
+  {
+    "hostname": "ledger-app.zwart.qzz.io",
+    "service": "zwart04-daganghub"
+  },
+  {
+    "hostname": "ledgerflow-app.zwart.qzz.io",
+    "service": "zwart04-daganghub"
+  },
+  {
+    "hostname": "invensight-app.zwart.qzz.io",
+    "service": "zwart04-daganghub"
+  },
+  {
+    "hostname": "priceforge-app.zwart.qzz.io",
+    "service": "zwart04-daganghub"
+  },
+  {
+    "hostname": "menumaster-app.zwart.qzz.io",
+    "service": "zwart04-daganghub"
+  },
+  {
+    "hostname": "motopart-app.zwart.qzz.io",
+    "service": "zwart04-daganghub"
+  },
+  {
+    "hostname": "attribution-hub-app.zwart.qzz.io",
+    "service": "zwart04-daganghub"
+  },
+  {
+    "hostname": "resi-flow-app.zwart.qzz.io",
+    "service": "zwart04-daganghub"
+  },
+  {
+    "hostname": "mediaforge-app.zwart.qzz.io",
+    "service": "zwart04-renderforge"
+  },
+  {
+    "hostname": "clipforge-app.zwart.qzz.io",
+    "service": "zwart04-renderforge"
+  },
+  {
+    "hostname": "clipforge-ai-app.zwart.qzz.io",
+    "service": "zwart04-renderforge"
+  },
+  {
+    "hostname": "neurotone-app.zwart.qzz.io",
+    "service": "zwart04-renderforge"
+  },
+  {
+    "hostname": "audiomind-studio-app.zwart.qzz.io",
+    "service": "zwart04-renderforge"
+  },
+  {
+    "hostname": "socsynth-studio-app.zwart.qzz.io",
+    "service": "zwart04-renderforge"
+  },
+  {
+    "hostname": "socsynth-studio-new-app.zwart.qzz.io",
+    "service": "zwart04-renderforge"
+  },
+  {
+    "hostname": "zwart-2026-08-31-socsynth-studio-app.zwart.qzz.io",
+    "service": "zwart04-renderforge"
+  },
+  {
+    "hostname": "podforge-app.zwart.qzz.io",
+    "service": "zwart04-renderforge"
+  },
+  {
+    "hostname": "voiceforge-studio-app.zwart.qzz.io",
+    "service": "zwart04-renderforge"
+  },
+  {
+    "hostname": "moodcanvas-app.zwart.qzz.io",
+    "service": "zwart04-renderforge"
+  },
+  {
+    "hostname": "courseforge-app.zwart.qzz.io",
+    "service": "zwart04-tutormind"
+  },
+  {
+    "hostname": "inventa-app.zwart.qzz.io",
+    "service": "zwart04-tutormind"
+  },
+  {
+    "hostname": "bookflow-app.zwart.qzz.io",
+    "service": "zwart04-servora"
+  },
+  {
+    "hostname": "fieldroute-os-app.zwart.qzz.io",
+    "service": "zwart04-servora"
+  },
+  {
+    "hostname": "fleetmile-app.zwart.qzz.io",
+    "service": "zwart04-servora"
+  },
+  {
+    "hostname": "farmlog-app.zwart.qzz.io",
+    "service": "zwart04-aquapure"
+  },
+  {
+    "hostname": "carbontrack-app.zwart.qzz.io",
+    "service": "zwart04-aquapure"
+  },
+  {
+    "hostname": "lawbot-app.zwart.qzz.io",
+    "service": "zwart04-legalbot-garuda"
+  },
+  {
+    "hostname": "legalbotgaruda-app.zwart.qzz.io",
+    "service": "zwart04-legalbot-garuda"
+  },
+  {
+    "hostname": "shaderforge-app.zwart.qzz.io",
+    "service": "zwart04-gridcraft"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "verified_at": "2026-10-03T16:01:51.797586+00:00",
+  "environment": "isolated Cloudflare test database only",
+  "checks": {
+    "responsive_layout": "desktop and 390px mobile screenshots inspected",
+    "audio_trim": "2s PCM input decoded; .25..1.25 preview duration 1.000s",
+    "video_trim": "2s MP4 input; .25..1.25 real rendered WebM preview duration .987s, readyState 4",
+    "image_crop": "200x200 actual input -> 113x200 9:16 canvas with overlay",
+    "javascript": "real worker output Total 10; fetch undefined; infinite loop terminated after 3s",
+    "shader": "actual WebGL output red; invalid GLSL produces compiler error"
+  },
+  "limitations": [
+    "In-app browser download observer timed out; physical saving of Blob downloads was not independently verified. Generated audio/video previews were decoded by the browser. Browser codec and voice support varies."
+  ]
+}

@@ -108,7 +108,7 @@ export async function handle(request,env) {
   return json({url:request.headers.get('X-App-Origin')+'/?invite='+token,expiresAt:Date.now()+7*86400000});
  }
  if(route==='audit'&&method==='GET') {const rows=await env.DB.prepare('SELECT a.*,u.name AS actor FROM audit a JOIN users u ON u.id=a.actor_id WHERE a.workspace_id=? ORDER BY a.created_at DESC LIMIT 100').bind(workspace).all();return json({entries:rows.results});}
- if(route==='export'&&method==='GET') {const rows=await env.DB.prepare('SELECT * FROM records WHERE workspace_id=? AND deleted_at IS NULL ORDER BY kind,created_at').bind(workspace).all();return json({product:product.id,workspace:{name:ws.name},exportedAt:new Date().toISOString(),records:await Promise.all(rows.results.map(r=>present(env,r)))});}
+ if(route==='export'&&method==='GET') {const rows=await env.DB.prepare('SELECT * FROM records WHERE workspace_id=? AND deleted_at IS NULL ORDER BY kind,created_at').bind(workspace).all();return json({product:product.id,workspace:{name:ws.name},exportedAt:new Date().toISOString(),records:await Promise.all(rows.results.map(r=>present(env,r,ws.role)))});}
  if(route==='ai/history'&&method==='GET') {const rows=await env.DB.prepare('SELECT id,prompt,answer,model,created_at FROM ai_messages WHERE workspace_id=? AND user_id=? ORDER BY created_at DESC LIMIT 30').bind(workspace,user.id).all();return json({messages:rows.results.reverse()});}
  if(route==='ai'&&method==='POST') {
   const input=await body(request);if(typeof input.prompt!=='string'||!input.prompt.trim()||input.prompt.length>2500)fail(422,'Pesan harus 1–2500 karakter.');
@@ -127,11 +127,11 @@ export async function handle(request,env) {
  if(resource) {
   const kind=resource[1],id=resource[2],module=moduleSpec(product,kind);
   if(method==='GET') {
-   if(id)return json({record:await present(env,await getRecord(env,workspace,id,kind))});
+   if(id)return json({record:await present(env,await getRecord(env,workspace,id,kind),ws.role)});
    const page=Math.max(1,Math.min(10000,Number(url.searchParams.get('page'))||1)),search=(url.searchParams.get('q')||'').slice(0,100),status=url.searchParams.get('status')||'';
    const where='workspace_id=? AND kind=? AND deleted_at IS NULL AND title LIKE ?'+(status?' AND status=?':'');const args=[workspace,kind,'%'+search+'%',...(status?[status]:[])];
    const rows=await env.DB.prepare('SELECT * FROM records WHERE '+where+' ORDER BY updated_at DESC,id LIMIT 30 OFFSET ?').bind(...args,(page-1)*30).all();const count=await env.DB.prepare('SELECT count(*) AS n FROM records WHERE '+where).bind(...args).first();
-   return json({records:await Promise.all(rows.results.map(r=>present(env,r))),total:count.n,page,pages:Math.ceil(count.n/30)});
+   return json({records:await Promise.all(rows.results.map(r=>present(env,r,ws.role))),total:count.n,page,pages:Math.ceil(count.n/30)});
   }
   if(method==='POST'&&!id) {const count=await env.DB.prepare('SELECT count(*) AS n FROM records WHERE workspace_id=? AND deleted_at IS NULL').bind(workspace).first();if(count.n>=10000)fail(409,'Batas workspace 10.000 record tercapai.');return json({record:await saveRecord(env,workspace,user,module,await body(request))},201);}
   if(method==='PUT'&&id)return json({record:await saveRecord(env,workspace,user,module,await body(request),id)});

@@ -75,6 +75,13 @@ test('quiz scores are calculated from stored answer keys instead of client-submi
  const env=testEnv(),auth=await account(env,'teacher@isolated-test.invalid','tutormind'),ws=await workspace(env,auth,'tutormind');
  const c=await create(env,auth,ws,'courses',{name:'Isolated course'},'tutormind');const q=await create(env,auth,ws,'quizzes',{name:'Isolated quiz',course_id:c.id,questions:[{question:'2 + 2',options:['3','4'],correct:1},{question:'3 + 3',options:['5','6'],correct:1}]},'tutormind');
  const attempt=await call(env,`/api/workspaces/${ws}/actions/submit-quiz`,'POST',{id:q.id,answers:[1,0],score:100},auth,'tutormind');assert.equal(attempt.status,200);assert.equal(attempt.data.score,50);
+ const student=await account(env,'learner@isolated-test.invalid','tutormind');
+ const invitation=await call(env,`/api/workspaces/${ws}/invitations`,'POST',{email:student.user.email,role:'viewer'},auth,'tutormind');
+ await call(env,'/api/invitations/accept','POST',{token:new URL(invitation.data.url).searchParams.get('invite')},student,'tutormind');
+ for(const path of [`records/quizzes/${q.id}`,'records/quizzes','export']) {
+  const response=await call(env,`/api/workspaces/${ws}/${path}`,'GET',undefined,student,'tutormind');assert.equal(response.status,200);assert.ok(!JSON.stringify(response.data).includes('"correct"'));
+ }
+ assert.equal((await call(env,`/api/workspaces/${ws}/actions/submit-quiz`,'POST',{id:q.id,answers:[1,1]},student,'tutormind')).data.score,100);
  assert.equal((await call(env,`/api/workspaces/${ws}/records/attempts`,'POST',{name:'Forged',quiz_id:q.id,answers:[1,1],score:100,date:'2026-10-03'},auth,'tutormind')).status,422);
 });
 test('provider failures remain failures, and no synthetic AI success is returned',async()=>{

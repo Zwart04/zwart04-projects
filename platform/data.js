@@ -84,8 +84,9 @@ export async function decryptLetter(value,secret) {
  const key=await crypto.subtle.importKey('raw',await crypto.subtle.digest('SHA-256',new TextEncoder().encode('letters:'+secret)),'AES-GCM',false,['decrypt']);
  return new TextDecoder().decode(await crypto.subtle.decrypt({name:'AES-GCM',iv:new Uint8Array(value.iv)},key,new Uint8Array(value.cipher)));
 }
-export async function present(env,row) {
+export async function present(env,row,role) {
  if(typeof row.data==='string')row.data=JSON.parse(row.data);
+  if(row.kind==='quizzes'&&role==='viewer')row.data.questions=row.data.questions.map(({correct,...question})=>question);
  if(row.kind==='letters') {const locked=Date.parse(row.data.unlock_at)>Date.now();row.data.body=locked?'':await decryptLetter(row.data.body,env.PEPPER);row.data.locked=locked;}
  const ids=Object.entries(row.data).filter(([key,value])=>key.endsWith('_id')&&typeof value==='string'&&value).map(([,value])=>value);
  row.referenceNames={};if(ids.length){const names=await env.DB.prepare('SELECT id,title FROM records WHERE workspace_id=? AND deleted_at IS NULL AND id IN ('+ids.map(()=>'?').join(',')+')').bind(row.workspace_id,...ids).all();row.referenceNames=Object.fromEntries(names.results.map(r=>[r.id,r.title]));}

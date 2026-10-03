@@ -16,6 +16,7 @@
     "daily-apps: letters write/read",
     "daily-apps: drafts write/read",
     "daily-apps: forms write/read",
+    "daily-apps: word_cards write/read",
     "Real anonymous form submission persisted",
     "Live Frankfurter currency feed dated 2026-10-02",
     "daganghub: products write/read",
@@ -105,8 +106,8 @@
     "stockgenie: notes write/read",
     "stockgenie: research write/read",
     "stockgenie: snapshots write/read",
-    "Live Coinbase feed: SOL,ETH,BTC"
+    "Live Coinbase feed: ETH,BTC"
   ],
   "production_test_records": 0,
-  "tested_at": "2026-10-03T14:58:16.243994+00:00"
+  "tested_at": "2026-10-03T15:55:17.564110+00:00"
 }
